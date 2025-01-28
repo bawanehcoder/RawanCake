@@ -1,0 +1,277 @@
+.home-header {
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
+
+.header-container {
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    /* border-bottom: 1px solid #F2F2F2; */
+    /* box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05); */
+}
+
+.header-container .nav-brand, .header-container .nav-brand img {
+    width: 124px;
+    height: 106px;
+}
+
+
+.header-container .nav-link {
+    color: #915CA6;
+    font-size: 1.2em;
+    position: relative;
+    
+}
+
+.header-container .nav-link.active {
+    /* color: #915CA6; */
+    /* background-color: #915CA61f; */
+    border-radius: 10px;
+}
+
+.header-container .nav-link:hover::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #915CA6;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+    left: 40%;
+    right: 40%;
+}
+
+.header-container .navbar .navbar-brand img {
+    width: 100px;
+}
+
+.header-container .navbar svg {
+    fill: #915CA6;
+    stroke: #915CA6;
+
+}
+
+.header-container .navbar svg path {
+    stroke: #915CA6;
+    fill: #915CA6;
+
+}
+
+.side-bar h3 {
+    color: #5B1977;
+    font-size: 1.8em;
+}
+
+.category-section h1 {
+    text-indent: 40px;
+}
+
+.category-section a {
+    text-decoration: none;
+}
+
+.category-section .item {
+    /* width: 150px; */
+    height: 150px;
+    /* background: linear-gradient(180deg, #f1f1f1 43.5%, #dcdcdc 62%); */
+    border-radius: 24px;
+    padding: 10px;
+    /* background: #e3e3e3; */
+    margin-top: 34px;
+}
+
+.category-section .item img {
+    width: 129px;
+    height: auto;
+}
+
+.category-section h3 {
+    color: #915CA6;
+    font-size: 1.4em;
+    font-weight: 700;
+    /* width: 200px; */
+}
+
+.product h1 {
+    background: linear-gradient(90deg, #5B1977 0%, #A92EDD 100%);
+    border-radius: 20px 0px;
+    color: white;
+    padding: 40px;
+}
+
+.product a {
+    text-decoration: none;
+}
+
+.product .card {
+    background-color: #F2F2F2;
+    box-shadow: none;
+    border-radius: 10px;
+    position: relative;
+}
+
+.product h3 {
+    text-decoration: none;
+    color: #915CA6;
+    font-size: 1.2em;
+}
+
+.product .card:hover .product-fun {
+    background-color: #3A0052;
+    background: rgba(58, 0, 82, 0.4);
+    border-radius: 10px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-details .card {
+    background-color: #F2F2F2;
+    box-shadow: none;
+}
+
+.login .card .card-header {
+    background-color: #5B1977;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.login .card .card-header h3 {
+    color: white;
+
+}
+
+.product-details .form-control, .checkout-details .form-control, .login .form-control {
+    border: 1px solid #5B1977;
+    border-radius: 15px;
+}
+
+.product-details h3, .login h3 {
+    font-size: 2.4em;
+    color: #5B1977;
+}
+
+.product-details .total-price {
+    font-size: 1.5em;
+    color: #A02CD2;
+    text-align: right;
+}
+
+.product-details h6 {
+    color: #5B1977;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: right;
+}
+
+.product-details .fa.fa-star {
+    font-size: 28px;
+}
+
+.product-details p {
+    font-size: 1.2em;
+    color: #5B1977;
+}
+
+.product-details label, .checkout-details label, .login label {
+    
+    font-size: 1.3em;
+    color: #5B1977;
+}
+
+.product-details .counter {
+    bottom: 12px;
+    right: 10px;
+}
+
+.product-details .counter a, .checkout-details a {
+    background-color: #5B1977;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.product-details .details-button {
+    background-color: #3A0052;
+    color: white;
+}
+
+.product-slider h3 {
+    font-size: 1.2em;
+}
+
+.product-slider .fa.fa-star {
+    font-size: 18px;
+}
+
+
+.slick-next::before, .slick-prev::before {
+    display: none;
+}
+
+.slick-next svg ellipse, .slick-prev svg ellipse {
+    fill: #915CA6;
+}
+
+.slick-next svg path, .slick-prev svg path {
+    fill: white;
+
+}
+
+html[dir="ltr"] .slick-prev {
+    left: auto;
+    right: -5px;
+}
+
+html[dir="ltr"] .slick-next {
+    right: auto;
+    left: -22px;
+}
+
+.checkout-details table thead {
+    background-color: #5B1977;
+    color: white;
+}
+
+.checkout-details .card {
+    /* border: 1px solid #3A0052; */
+}
+
+.checkout-details table th, table td {
+    padding: 10px;
+}
+
+.checkout-details table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.checkout-details table thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.checkout-details .items-counter input {
+    width: 40px;
+    border: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.checkout-details h1 {
+    color: #5B1977;
+    font-size: 2em;
+}
+
+.checkout-details h3 {
+    color: #BE66E3;
+}

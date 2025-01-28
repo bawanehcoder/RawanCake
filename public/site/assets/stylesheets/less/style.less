@@ -1,0 +1,1789 @@
+/*
+===============================================
+Table Of Content
+===============================================
+
+1. Header Section CSS
+	1.1 Header Custom Title Background
+2. Shop Product
+	2.1 Product Details
+	2.2 Chart Page
+3. Banner Section CSS
+4. About Cake Section CSS
+5. Gallery Section CSS
+6. Product Cake Section CSS
+7. News Cake Section CSS
+8. Option Section CSS
+9. Pricing Cake Section CSS
+10. About Cake Section CSS
+11. Pagination Section CSS
+12. Terms of Use and Privacy Section CSS
+13. 404 Section CSS
+14. Footer Section CSS
+
+-------------------------------------------- */
+
+/*
+===============================================
+1. Header Section CSS
+===============================================
+*/
+
+@import "variable.less";
+
+.top-highlight {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(165, 147, 194, 0.7);
+	z-index: 3;
+}
+
+/*
+===============================================
+1.1 Header Section CSS
+===============================================
+*/
+
+.header-wrapper {
+	// height: 660px;
+	.wrap-header {
+		background: url('../../images/background-cake.png') repeat;
+		height: 100%;
+		&.purple-top-dot{
+			background: url('../../images/dot-purple-1.png') repeat;
+			height: 250px;
+		}
+		&.blue-top-dot{
+			background: url('../../images/dot-blue-1.png') repeat;
+			height: 250px;
+		}
+		&.green-top-dot{
+			background: url('../../images/dot-green-1.png') repeat;
+			height: 250px;
+		}
+		&.orange-top-dot{
+			background: url('../../images/dot-orange-1.png') repeat;
+			height: 250px;
+		}
+	}
+	.chart-cake {
+		padding: 40px 0;
+		border-bottom: dashed 1px @grey;
+		background-color: @cream;
+		.transition(0.2s);
+		cursor: pointer;
+		&:hover {
+			background-color: darken(@cream, 4%);
+		}
+		&:nth-child(2n){
+			background-color: darken(@cream, 2%);
+			.transition(0.2s);
+			cursor: pointer;
+			&:hover {
+				background-color: darken(@cream, 4%);
+			}
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+			padding: 20px 0;
+		}
+		.tittle-chart-cake {
+			border-bottom: dashed 1px @grey;
+			h1 {
+				font-size: 40px;
+				//text-transform: uppercase;
+				letter-spacing: 2px;
+				margin-top: 0;
+				span {
+					font-size: 30px;
+					font-family: 'latoregular';
+					text-transform: capitalize;
+					letter-spacing: 0px;
+				}
+			}
+		}
+		.star {
+			padding: 15px 0 15px 0;
+			li {
+				display: inline-block;
+				span {
+					margin-left: 10px;
+					vertical-align: top;
+					font-size: 18px;
+				}
+				.icon-star-active {
+					width: 16px;
+					height: 16px;
+					background: url('../../images/star.png') repeat;
+					display: inline-block;
+				}
+				.icon-star-disable {
+					width: 16px;
+					height: 16px;
+					background: url('../../images/star.png') repeat;
+					background-position: 16px 16px;
+					display: inline-block;
+					cursor: pointer;
+					.transition(0.2s);
+					&:hover {
+						cursor: pointer;
+						background-position: 16px 0px;
+					}
+					&:active {
+						background-position: 16px 16px;
+					}
+				}
+			}
+		}
+	}
+	.blog-cake {
+		padding: 15px;
+		.overflow-xs {
+			overflow: hidden;
+		}
+		.wrap-blog-content {
+			// padding: 10px;
+			margin-top: 20px;
+			float: left;
+			width: 100%;
+			.left-date-blog {
+				width: 100%;
+				height: 80px;
+				background-color: @blue;
+				padding: 10px;
+				text-align: center;
+				color: white;
+				float: left;
+				@media(min-width: @screen-sm-min){
+					height: 100px;
+				}
+				@media(min-width: @screen-md-min){
+					width: 100px;
+					height: 100px;
+				}
+				h1 {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+				p {
+					line-height: 7px;
+					//text-transform: uppercase;
+				}
+			}
+			.right-hand-content-blog {
+				width: 100%;
+				float: left;
+				@media(min-width: @screen-md-min){
+					width: 650px;
+				}
+				@media(min-width: 992px) and (max-width:1199px){
+					width: 516px;
+				}
+				.content-blog-bottom {
+					padding: 15px;
+					background-color: white;
+					margin-bottom: 20px;
+					font-size: 18px;
+					display: block;
+					h4 {
+						color: @blue;
+						font-family: 'montserratbold';
+						//text-transform: uppercase;
+						font-size: 25px;
+						span {
+							font-family: 'latoregular';
+							text-transform: capitalize;
+							font-size: 18px;
+						}
+					}
+					.right-read {
+						height: 90px;
+						display: table;
+						margin: 0 auto;
+						span {
+							display: table-cell;
+							vertical-align: middle;
+						}
+					}
+				}
+			}
+		}
+		.form-list-box {
+			margin-bottom: 20px;
+			overflow: hidden;
+			.content-tags {
+				overflow: hidden;
+				@media(max-width: @screen-sm-min){
+					margin: 0 auto;
+					display: block;
+					text-align: center;
+				}
+				a {
+					padding: 10px;
+					background-color: @blue;
+					display: inline-block;
+					color: @white;
+					//text-transform: uppercase;
+					.transition(0.2s);
+					margin-right: 10px;
+					margin-bottom: 10px;
+					&:hover {
+						text-decoration: none;
+						background-color: darken(@blue, 10%)
+					}
+				}
+			}
+			h3 {
+				font-size: 25px;
+				font-family: 'montserratbold';
+				//text-transform: uppercase;
+				color: @blue;
+				letter-spacing: 1px;
+			}
+			p, ul {
+				font-size: 18px;
+			}
+			ul {
+				float: left;
+				width: 100%;
+				li {
+					padding: 10px;
+					float: left;
+					width: 100%;
+					border-bottom: 1px @grey dashed;
+					.transition(0.2s);
+					cursor: pointer;
+					vertical-align: top;
+					&:hover {
+						background-color: darken(@cream, 4%)
+					}
+				}
+			}
+		}
+	}
+	.show-content-blog {
+		display: none;
+	}
+	.top-absolute {
+		position: absolute;
+		width: 100%;
+		z-index: 3;
+	}
+	.navbar-cake {
+		width: 100%;
+		position: absolute;
+		z-index: 1;
+		img {
+			margin: 0 auto;
+		}
+	}
+	.toggle-cake {
+		background-color: @pink;
+		.transition(0.2s);
+		z-index: 2;
+		&:hover {
+			background-color: darken(@pink, 10%);
+		}
+		.icon-bar {
+			background-color: @white;
+		}
+	}
+	.mega-menu {
+		//text-transform: uppercase;
+		margin-top: 100px;
+		@media(min-width: @screen-sm-min){
+			margin-top: 20px;
+		}
+		margin-bottom: 40px;
+		.tittle-mega {
+			text-align: center;
+			border-top: dashed 1px @grey;
+			border-bottom: dashed 1px @grey;
+		}
+		.list-mega {
+			padding: 10px;
+			li {
+				&.bottom-red-border {
+					border-bottom: 2px solid @pink;
+				}
+				padding: 7px;
+				border-bottom: dotted 1px @grey;
+				.transition(0.2s);
+				cursor: pointer;
+				a {
+					display: block;
+					text-decoration: none;
+					color: @grey;
+				}
+				&:first-child {
+					background-color: @cream;
+					cursor: inherit;
+					&:hover {
+						background-color: @cream;
+					}
+				}
+				&:hover {
+					background-color: darken(@cream, 5%);
+				}
+			}
+		}
+	}
+	.tittle-sub-top {
+		color: @cream;
+		font-size: 25px;
+		h1 {
+			//text-transform: uppercase;
+			font-size: 30px;
+			display: inline-block;
+			@media(min-width: @screen-sm-min){
+				font-size: 45px;
+			}
+		}
+		h2 {
+			display: inline-block;
+		}
+	}
+	.top-header {
+		background-color: @cream;
+		height: 130px;
+		&.show-mega {
+			height: auto;
+		}
+		.header-nav{
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 20px;
+			li {
+				vertical-align: top;
+				display: inline-block;
+				//text-transform: uppercase;
+				color: #a1a2a6;
+				font-size: 16px;
+				padding-right: 20px;
+				padding-left: 25px;
+				padding-top: 40px;
+				letter-spacing: 1px;
+				a {
+					color: #a1a2a6;
+					.transition(0.2s);
+					text-decoration: none;
+					&:hover {
+						color: @pink;
+					}
+				}
+			}
+		}
+	}
+}
+
+.triangle {
+	background: url('../../images/arrow.png') repeat-x;
+	-webkit-animation: arrows 1s infinite;
+	animation: arrows 1s infinite;
+}
+
+.triangle-no-animate {
+	background: url('../../images/arrow.png') repeat-x;
+}
+
+/* Standard syntax */
+@keyframes arrows {
+		from   { background-position: 0px 0px  ;}
+		to     { background-position: 32px 0px ;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes arrows {
+		from   { background-position: 0px 0px  ;}
+		to     { background-position: 32px 0px ;}
+}
+
+.triangle-top {
+	background: url('../../images/arrow-top.png') repeat-x;
+	-webkit-animation: arrowstop 1s infinite;
+	animation: arrowstop 1s infinite;
+	height: 15px;
+}
+
+.triangle-top-no-animate {
+	background: url('../../images/arrow-top.png') repeat-x;
+	height: 15px;
+}
+
+/* Standard syntax */
+@keyframes arrowstop {
+		from   { background-position: 0px 0px  ;}
+		to     { background-position: 32px 0px ;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes arrowstop {
+		from   { background-position: 0px 0px  ;}
+		to     { background-position: 32px 0px ;}
+}
+
+/*
+===============================================
+2. Shop Product
+===============================================
+*/
+
+.more-cake {
+	background-color: @green;
+	color: @white;
+	padding: 50px 0;
+	p {
+		font-size: 20px;
+	}
+	.more-product {
+		width: 100%;
+		background-color: pink;
+		img {
+			border: 5px @white solid;
+		}
+	}
+	.detail-product {
+		background-color: @white;
+		color: @grey;
+		padding: 10px;
+		margin-bottom: 20px;
+		font-size: 20px;
+		line-height: 40px;
+		h1 {
+			font-size: 40px;
+		}
+	}
+}
+
+/*
+===============================================
+2.1 Product Details
+===============================================
+*/
+
+.shop-back {
+	margin-bottom: 10px;
+	a, a:hover {
+		color: @grey;
+	}
+}
+
+/*
+===============================================
+2.2 Chart Page
+===============================================
+*/
+
+.chart-cake {
+	tr {
+		background-color: darken(@white, 1%);
+	}
+	tr:first-child {
+		background-color: @white;
+	}
+}
+
+.chart-description{
+	max-width: 200px;
+	border-bottom: dashed 1px #a1a2a6;
+}
+
+.chart-center {
+	vertical-align: middle !important;
+	text-align: center;
+}
+
+.top-cake-table {
+	background-color: @white;
+	border: solid 1px #ddd;
+	margin-bottom: 10px;
+	.top-cake-no,.top-cake-product,
+	.top-cake-img,.top-cake-desription,
+	.top-cake-button {
+		padding: 10px;
+		border-bottom: solid 1px #ddd;
+	}
+}
+
+/*
+===============================================
+3. Banner Section CSS
+===============================================
+*/
+
+.tittle-cake {
+	color: @white;
+	h1 {
+		letter-spacing: 7px;
+		margin-top: 0;
+		margin-bottom: 0;
+		text-shadow: -1px 3px 0px rgba(245, 127, 127, 1);
+	}
+	h2 {
+		position: relative;
+		margin-top: 30px;
+		margin-bottom: 0;
+		&:before, &:after {
+			@media(min-width: @screen-sm-min){
+				content: '';
+				position: absolute;
+				background-color: @white;
+				width: 10px;
+				height: 10px;
+				top: 20px;
+				border-radius: 50px;
+			}
+		}
+		&:before {
+			@media(min-width: 992px) and (max-width:1199px){
+				left: 355px;
+			}
+			left: 460px;
+		}
+		&:after {
+			@media(min-width: 992px) and (max-width:1199px){
+				left: 575px;
+			}
+			right: 460px;
+		}
+	}
+}
+
+.product-tittle {
+	h2{
+		position: relative;
+		margin-top: 30px;
+		margin-bottom: 0;
+		&:before, &:after {
+			@media(min-width: @screen-sm-min){
+				content: '';
+				position: absolute;
+				background-color: @white;
+				width: 10px;
+				height: 10px;
+				top: 20px;
+				border-radius: 50px;
+			}
+		}
+		&:before {
+			@media(min-width: 992px) and (max-width:1199px){
+				left: 375px;
+			}
+			left: 460px;
+		}
+		&:after {
+			@media(min-width: 992px) and (max-width:1199px){
+				left: 550px;
+			}
+			right: 460px;
+		}
+	}
+}
+
+.center {
+	img {
+		-moz-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-o-transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+
+.img-relative {
+	position: relative;
+}
+
+.price-cake {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: @red;
+	color: white;
+	top: 20px;
+	right: 20px;
+	border-radius: 50px;
+	p {
+		width: 100px;
+		height: 100px;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		font-size: 38px;
+		font-family: 'latoregular';
+	}
+}
+
+.green-table{
+	background-color: @green;
+	border-top: 10px solid @lgreen;
+	&.mar-to-top {
+		margin-top: -105px;
+		height: 100px;
+	}
+}
+
+.green-arrow {
+	height: 10px;
+	background: url('../../images/arrow-green.png') repeat;
+}
+
+.purple-arrow {
+	height: 10px;
+	background: url('../../images/arrow-purple.png') repeat;
+}
+
+.blue-arrow {
+	height: 10px;
+	background: url('../../images/arrow-blues.png') repeat;
+}
+
+.orange-arrow {
+	height: 10px;
+	background: url('../../images/arrow-oranges.png') repeat;
+}
+
+.slider-cake {
+	cursor: move;
+	img {
+		@media(max-width: @screen-sm-min){
+			width: 100%;
+		}
+	}
+}
+
+/*
+===============================================
+4. About Cake Section CSS
+===============================================
+*/
+
+.about-cake {
+	background-color: @purple;
+}
+
+.about-content, .product-tittle {
+	padding: 20px 0;
+	text-align: center;
+	color: white;
+}
+
+.about-content {
+	p {
+		font-size: 18px;
+		margin-top: 20px;
+		max-width: 750px;
+		margin: 0 auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+/*
+===============================================
+5. Gallery Section CSS
+===============================================
+*/
+
+.gallery {
+	padding-top: 20px;
+	padding-bottom: 100px;
+	.filter {
+		text-align: center;
+		margin-bottom: 20px;
+		//text-transform: uppercase;
+		a {
+			color: @white;
+			&.current {
+				.filterbutton {
+					background-color: darken(@green, 10%);
+				}
+			}
+			.filterbutton{
+				background-color: @green;
+				display: inline-block;
+				padding: 10px;
+				margin-right: 5px;
+				margin-top: 5px;
+				margin-bottom: 10px;
+				.transition(0.2s);
+				&:hover {
+					background-color: darken(@green, 10%);
+				}
+			}
+		}
+	}
+}
+
+.gallery-cake a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.gal-relative {
+	position: relative;
+	display: block;
+	.gal-absolute {
+		position: absolute;
+		background-color: @green;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		.transition(0.2s);
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+}
+
+// .gal-relative {
+//  position: relative;
+//  .gal-wizz-effect {
+//    position: absolute;
+//    width: 100%;
+//    height: 100%;
+//    -webkit-animation: wizz 0.5s infinite;
+//    animation: wizz 0.5s infinite;
+//    opacity: 0;
+//    .transition(.2s);
+//    cursor: pointer;
+//    &:hover {
+//      opacity: 1;
+//      cursor: pointer;
+//    }
+//    &.wizz-green {
+//      background: url('../../images/arrow-lgreen.png') repeat;
+//      background-color: rgba(30, 179, 144, 0.5);
+//      .wrap-info {
+//        background-color: @green;
+//      }
+//    }
+//    &.wizz-orange {
+//      background: url('../../images/arrow-orange.png') repeat;
+//      background-color: rgba(236, 167, 78, 0.5);
+//      .wrap-info {
+//        background-color: @orange;
+//      }
+//    }
+//    &.wizz-pink {
+//      background: url('../../images/arrow-pink.png') repeat;
+//      background-color: rgba(237, 144, 144, 0.5);
+//      .wrap-info {
+//        background-color: @pink;
+//      }
+//    }
+//    &.wizz-purple {
+//      background: url('../../images/arrow-violet.png') repeat;
+//      background-color: rgba(147, 128, 178, 0.5);
+//      .wrap-info {
+//        background-color: @purple;
+//      }
+//    }
+//    &.wizz-blue {
+//      background: url('../../images/arrow-blue.png') repeat;
+//      background-color: rgba(80, 202, 230, 0.5);
+//      .wrap-info {
+//        background-color: @blue;
+//      }
+//    }
+//    &.wizz-grey {
+//      background: url('../../images/arrow-greys.png') repeat;
+//      background-color: rgba(146, 148, 154, 0.5);
+//      .wrap-info {
+//        background-color: @grey;
+//      }
+//    }
+
+//    &.dots-green {
+//      background: url('../../images/dot-green.png') repeat;
+//      background-color: rgba(30, 179, 144, 0.5);
+//      .wrap-info {
+//        background-color: @green;
+//      }
+//    }
+//    &.dots-orange {
+//      background: url('../../images/dot-oranges.png') repeat;
+//      background-color: rgba(236, 167, 78, 0.5);
+//      .wrap-info {
+//        background-color: @orange;
+//      }
+//    }
+//    &.dots-pink {
+//      background: url('../../images/dot-pinks.png') repeat;
+//      background-color: rgba(237, 144, 144, 0.5);
+//      .wrap-info {
+//        background-color: @pink;
+//      }
+//    }
+//    &.dots-purple {
+//      background: url('../../images/dot-purples.png') repeat;
+//      background-color: rgba(147, 128, 178, 0.5);
+//      .wrap-info {
+//        background-color: @purple;
+//      }
+//    }
+//    &.dots-blue {
+//      background: url('../../images/dot-blues.png') repeat;
+//      background-color: rgba(80, 202, 230, 0.5);
+//      .wrap-info {
+//        background-color: @blue;
+//      }
+//    }
+
+//    .wrap-info {
+//      padding: 20px;
+//      font-family: 'montserratbold';
+//      text-transform: uppercase;
+//      color: @white;
+//      font-size: 15px;
+//      letter-spacing: 2px;
+//      text-align: center;
+//    }
+//  }
+// }
+
+/*
+===============================================
+6. Product Cake Section CSS
+===============================================
+*/
+
+.product-tittle {
+	h2 {
+		color: @purple;
+		margin-bottom: 40px;
+		&:before, &:after {
+			background-color: @purple;
+		}
+	}
+}
+
+.wrap-product {
+	background-color: @white;
+	margin-bottom: 20px;
+	.round(10px);
+	.top-product {
+		.round-top(10px);
+		background-color: @white;
+		height: 200px;
+		padding: 20px;
+		&.blue-cake {
+			background: url('../../images/cake-blue.png') no-repeat right;
+			h1, p, span {
+				color: @blue;
+				@media(min-width: @screen-sm-min){
+					background-color: white;
+				}
+				@media(min-width: @screen-md-min){
+					background-color: transparent;
+				}
+			}
+		}
+		&.red-cake {
+			background: url('../../images/cake-red.png') no-repeat right;
+			h1, p, span {
+				color: @pink;
+				@media(min-width: @screen-sm-min){
+					background-color: white;
+				}
+				@media(min-width: @screen-md-min){
+					background-color: transparent;
+				}
+			}
+		}
+		&.orange-cake {
+			background: url('../../images/cake-orange.png') no-repeat right;
+			h1, p, span {
+				color: @orange;
+				@media(min-width: @screen-sm-min){
+					background-color: white;
+				}
+				@media(min-width: @screen-md-min){
+					background-color: transparent;
+				}
+			}
+		}
+		h1 {
+			letter-spacing: 2px;
+		}
+		p {
+			font-family: 'montserratbold';
+			font-size: 24px;
+		}
+		span {
+			font-size: 18px;
+		}
+	}
+	.bottom-product {
+		position: relative;
+		text-align: center;
+		color: @white;
+		margin-bottom: 10px;
+
+		.wrap-bottom-cake {
+			padding: 20px;
+		}
+
+		.bottom-product-abs {
+			.round-bottom(10px);
+			&.blue-dot{
+				background: url('../../images/dot-blue.png') repeat;
+			}
+			&.pink-dot{
+				background: url('../../images/dot-pink.png') repeat;
+			}
+			&.orange-dot{
+				background: url('../../images/dot-orange.png') repeat;
+			}
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			color: white;
+			-webkit-animation: dotblue 0.5s infinite;
+			animation: dotblue 0.5s infinite;
+			opacity: 0;
+			.transition(.2s);
+			cursor: pointer;
+			&:hover {
+				opacity: 1;
+				cursor: pointer;
+			}
+		}
+
+		/* Chrome, Safari, Opera */
+		@-webkit-keyframes dotblue {
+				from   { background-position: 32px 0px  ;}
+				to     { background-position: 0px 0px ;}
+		}
+
+		/* Standard syntax */
+		@keyframes dotblue {
+				from   { background-position: 32px 0px  ;}
+				ro     { background-position: 0px 0px ;}
+		}
+
+		.button-cake {
+			display: table;
+			width: 100%;
+			height: 100%;
+			.blue-button-cake {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+
+
+		&.bottom-blue {
+			background-color: @dblue;
+		}
+		&.bottom-red {
+			background-color: @pink;
+		}
+		&.bottom-orange {
+			background-color: @orange;
+		}
+		.round-bottom(10px);
+		p {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		.blue-line, .red-line, .orange-line {
+			height: 5px;
+			max-width: 100px;
+			margin: 0 auto;
+		}
+		.blue-line {
+			background-color: @blue;
+		}
+		.red-line {
+			background-color: @lpink;
+		}
+		.orange-line {
+			background-color: @lorange;
+		}
+	}
+}
+
+.product-content {
+	p {
+		&.text-content {
+			font-size: 18px;
+			margin-top: 40px;
+			margin-bottom: 40px;
+			color: @grey;
+			max-width: 750px;
+			margin: 0 auto;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+}
+
+/*
+===============================================
+7. News Cake Section CSS
+===============================================
+*/
+
+.news-cake {
+	background-color: @purple;
+	padding-bottom: 40px;
+}
+
+.discount-cake {
+	width: 200px;
+	height: 200px;
+	background-color: @white;
+}
+
+.left-news, .right-news{
+	float: left;
+	width: 100%;
+	@media(min-width: @screen-sm-min){
+		width: 50%;
+	}
+}
+
+.left-news {
+	width: 100%;
+	height: 300px;
+	background: url('../../images/cake-wed.png') no-repeat center;
+	background-size: cover;
+	padding: 20px;
+	color: @white;
+	letter-spacing: 3px;
+	@media(min-width: @screen-sm-min){
+		width: 50%;
+		height: 358px;
+		margin-bottom: 20px;
+	}
+	@media(min-width: @screen-md-min){
+		width: 50%;
+		height: 570px;
+		margin-bottom: 20px;
+	}
+	h1 {
+		font-size: 50px;
+		line-height: 40px;
+		border-bottom: 5px solid white;
+		span {
+			font-size: 30px;
+		}
+	}
+}
+
+.right-news {
+	height: 285px;
+	@media(min-width: @screen-sm-min){
+		height: 179px;
+	}
+	@media(min-width: @screen-md-min){
+		height: 285px;
+	}
+}
+
+.text-table {
+	background-color: @white;
+	position: relative;
+	cursor: pointer;
+	p {
+		a {
+			color: @purple;
+			.transition(0.2s);
+			text-decoration: none;
+			&:hover {
+				color: pink;
+			}
+		}
+		.discount, .percent {
+			font-family: 'montserratbold';
+		}
+
+		.discount {
+			font-size: 100px;
+			line-height: 60px;
+			@media(min-width: @screen-sm-min){
+				font-size: 60px;
+			}
+			@media(min-width: @screen-md-min){
+				font-size: 100px;
+			}
+		}
+		.percent {
+			font-size: 40px;
+		}
+		.sale {
+			font-size: 20px;
+			line-height: 0;
+		}
+		&:hover {
+			color: pink;
+		}
+	}
+
+	.wizz-effect {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-animation: wizz 0.5s infinite;
+		animation: wizz 0.5s infinite;
+		opacity: 0;
+		.transition(.2s);
+		cursor: pointer;
+		&:hover {
+			opacity: 1;
+			cursor: pointer;
+		}
+		&.wizz-green {
+			background: url('../../images/arrow-lgreen.png') repeat;
+			.wrap-info {
+				background-color: @green;
+			}
+		}
+		&.wizz-orange {
+			background: url('../../images/arrow-orange.png') repeat;
+			.wrap-info {
+				background-color: @orange;
+			}
+		}
+		&.wizz-pink {
+			background: url('../../images/arrow-pink.png') repeat;
+			.wrap-info {
+				background-color: @pink;
+			}
+		}
+	}
+
+	.wrap-info {
+		padding: 20px;
+		font-family: 'montserratbold';
+		//text-transform: uppercase;
+		color: @white;
+		font-size: 15px;
+		letter-spacing: 2px;
+	}
+
+	/* Standard syntax */
+	@keyframes wizz {
+			from   { background-position: 0px 0px  ;}
+		to     { background-position: 32px 0px ;}
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes wizz {
+		from   { background-position: 0px 0px  ;}
+		to     { background-position: 32px 0px ;}
+	}
+
+	&.dot-background {
+		width: 100%;
+		background: url('../../images/dot-purple.png') repeat;
+		// -webkit-animation: dotpurple 1s infinite;
+		// animation: dotpurple 0.5s infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes dotpurple {
+			from   { background-position: 0px 32px  ;}
+			to     { background-position: 0px 0px ;}
+	}
+
+	/* Standard syntax */
+	@keyframes dotpurple {
+			from   { background-position: 0px 32px  ;}
+			ro     { background-position: 0px 0px ;}
+	}
+}
+
+.top-news-right {
+	float: left;
+	.left-news-right, .right-news-right {
+		width: 100%;
+		float: left;
+		@media(min-width: @screen-sm-min){
+			width: 50%;
+			height: 179px;
+		}
+		@media(min-width: @screen-md-min){
+			height: 285px;
+		}
+	}
+}
+
+.bottom-new-right {
+	float: left;
+	background-color: @cream;
+	width: 100%;
+	// height: 285px;
+	@media(min-width: @screen-sm-min){
+		height: 179px;
+	}
+	@media(min-width: @screen-md-min){
+		height: 285px;
+	}
+}
+
+// Custom slider pagination
+
+.quote {
+	position: relative;
+	height: 100%;
+	padding: 40px;
+	color: @purple;
+	margin-bottom: 0;
+
+	.slick-next, .slick-prev {
+		.round(0);
+		top: inherit;
+		bottom: 0;
+		position: absolute;
+	}
+
+	.slick-next {
+		right: 0;
+	}
+
+	.slick-prev {
+		right: 50px;
+		left: inherit;
+	}
+
+	span, p {
+		display: inline-block;
+		font-size: 15px;
+		@media(min-width: @screen-md-min){
+			font-size: 25px;
+		}
+	}
+
+	.bold-font-lg {
+		font-family: 'montserratbold';
+		font-size: 22px;
+		@media(min-width: @screen-md-min){
+			font-size: 30px;
+		}
+	}
+
+}
+
+/*
+===============================================
+8. Option Section CSS
+===============================================
+*/
+
+.option-content {
+	padding: 50px 0;
+	h4 {
+		font-family: 'montserratbold';
+		//text-transform: uppercase;
+		font-size: 30px;
+		text-align: center;
+		letter-spacing: 2px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+
+	.messes {
+		width: 255px;
+		height: 255px;
+		position: relative;
+		margin: 0 auto;
+		.messes-show {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			margin: 0 auto;
+			background: url('../../images/messes.png') no-repeat center;
+			opacity: 0;
+			z-index: 2;
+			cursor: pointer;
+			.transition(0.2s);
+			&:hover {
+				opacity: 1;
+				cursor: pointer;
+			}
+		}
+		.round-wrap {
+			position: absolute;
+			width: 140px;
+			height: 140px;
+			top: 23%;
+			left: 23%;
+			.round(100px);
+			z-index: 1;
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+			&.green-option {
+				background: url('../../images/cake-white-lg.png') no-repeat center;
+				background-color: @green;
+			}
+			&.orange-option {
+				background: url('../../images/cake-white-lg.png') no-repeat center;
+				background-color: @orange;
+			}
+			&.blue-option {
+				background: url('../../images/cake-white-lg.png') no-repeat center;
+				background-color: @blue;
+			}
+			&.pink-option {
+				background: url('../../images/cake-white-lg.png') no-repeat center;
+				background-color: @pink;
+			}
+			&.purple-option {
+				background: url('../../images/cake-white-lg.png') no-repeat center;
+				background-color: @purple;
+			}
+			&.dpurple-option {
+				background: url('../../images/cake-white-lg.png') no-repeat center;
+				background-color: @dpurple;
+			}
+		}
+	}
+
+	.line-temp {
+		height: 5px;
+		width: 100px;
+		text-align: center;
+		margin: 0 auto;
+
+		&.line-green-sm {
+			background-color: @lgreen;
+		}
+		&.line-orange-sm {
+			background-color: @orange;
+		}
+		&.line-blue-sm {
+			background-color: @blue;
+		}
+		&.line-pink-sm {
+			background-color: @pink;
+		}
+		&.line-purple-sm {
+			background-color: @purple;
+		}
+		&.line-dpurple-sm {
+			background-color: @dpurple;
+		}
+	}
+}
+
+/*
+===============================================
+9. Pricing Cake Section CSS
+===============================================
+*/
+
+.pricing-cake {
+	background-color: @dpurple;
+	.content-pricing-cake {
+		padding: 60px 0;
+		.img-wrap-price {
+			display: block;
+			margin: 0 auto;
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		.content-price {
+			background-color: @cream;
+			margin-top: -105px;
+			padding-top: 120px;
+		}
+		.content-price-tag {
+			background-color: @cream;
+			@media(min-width: @screen-md-min){
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+			h4 {
+				margin: 0;
+				font-size: 20px;
+				font-family: 'montserratbold';
+				@media(min-width: @screen-md-min){
+					font-size: 30px;
+				}
+				span {
+					font-family: 'latoregular';
+					font-size: 15px;
+					@media(min-width: @screen-md-min){
+						font-size: 20px;
+					}
+				}
+			}
+		}
+		.price-purple {
+			background-color: @lpurple;
+			margin-top: 20px;
+			color: @dpurple;
+			.text-price {
+				padding: 20px;
+				font-size: 18px;
+			}
+		}
+
+		.price-pink {
+			background-color: @lpink;
+			margin-top: 20px;
+			color: @pink;
+			.text-price {
+				padding: 20px;
+				font-size: 18px;
+			}
+		}
+
+		.price-green {
+			background-color: @lgreen;
+			margin-top: 20px;
+			color: @green;
+			.text-price {
+				padding: 20px;
+				font-size: 18px;
+			}
+		}
+
+		.price-blue {
+			background-color: @lblue;
+			margin-top: 20px;
+			color: @blue;
+			.text-price {
+				padding: 20px;
+				font-size: 18px;
+			}
+		}
+
+		ul.list-price {
+			padding: 20px;
+			li {
+				padding-bottom: 5px;
+				padding-top: 5px;
+				&.purple-line {
+					border-bottom: solid 1px @dpurple;
+				}
+				&.pink-line {
+					border-bottom: solid 1px @pink;
+				}
+				&.green-line {
+					border-bottom: solid 1px @green;
+				}
+				&.blue-line {
+					border-bottom: solid 1px @blue;
+				}
+			}
+		}
+		.price-btn {
+			padding: 10px;
+			color: @white;
+			font-family: 'montserratbold';
+			//text-transform: uppercase;
+			font-size: 18px;
+			letter-spacing: 2px;
+			&.price-purple-btn {
+				background-color: @plum;
+				cursor: pointer;
+				.transition(0.2s);
+				&:hover {
+					background-color: darken(@plum, 10%);
+					cursor: pointer;
+				}
+			}
+			&.price-pink-btn {
+				background-color: @pink;
+				cursor: pointer;
+				.transition(0.2s);
+				&:hover{
+					background-color: darken(@pink, 10%);
+					cursor: pointer;
+				}
+			}
+			&.price-green-btn {
+				background-color: @green;
+				cursor: pointer;
+				.transition(0.2s);
+				&:hover{
+					background-color: darken(@green, 10%);
+					cursor: pointer;
+				}
+			}
+			&.price-blue-btn {
+				background-color: @blue;
+				cursor: pointer;
+				.transition(0.2s);
+				&:hover{
+					background-color: darken(@blue, 10%);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+/*
+===============================================
+10. About Cake Section CSS
+===============================================
+*/
+
+.abouts-cake {
+	padding: 40px 0;
+	padding-bottom: 150px;
+	h2:before, h2:after {
+		background-color: @pink;
+	}
+	h4 {
+		font-family: 'montserratbold';
+		//text-transform: uppercase;
+		font-size: 30px;
+		text-align: center;
+		letter-spacing: 2px;
+		color: @pink;
+		margin-top: 40px;
+	}
+	.line-pink-about {
+		width: 100px;
+		height: 5px;
+		background-color: @lpink;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 18px;
+	}
+}
+
+.img-round-about {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*
+===============================================
+11. Pagination Section CSS
+===============================================
+*/
+
+.pagination-wrap {
+	ul.pagination {
+		li {
+			float: left;
+			margin-right: 5px;
+			.round-top(0px);
+			a {
+				width: 40px;
+				height: 40px;
+				background-color: @pink;
+				color: @white;
+				font-size: 20px;
+				line-height: 25px;
+				border: transparent;
+				.round-top(0px);
+				.round-bottom(0px);
+				.transition(0.2s);
+				&:hover {
+					background-color: @blue;
+				}
+				&.active {
+					background-color: @blue;
+				}
+			}
+		}
+	}
+}
+
+/*
+===============================================
+12. Terms of Use and Privacy Section CSS
+===============================================
+*/
+
+.content-terms, .content-privacy {
+	padding-top: 15px;
+	font-size: 18px;
+	h1 {
+		font-size: 35px;
+		//text-transform: uppercase;
+	}
+	.important-text {
+		padding: 15px;
+		background-color: darken(@cream, 5%);
+	}
+}
+
+/*
+===============================================
+13. 404 Section CSS
+===============================================
+*/
+
+.content-404 {
+	padding-top: 50px;
+	img {
+		width: 200px;
+		@media(max-width: @screen-sm-min){
+			width: 150px;
+		}
+	}
+	ul{
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+		li {
+			color: @orange;
+			display: inline-block;
+			font-size: 150px;
+			@media(max-width: @screen-sm-min){
+				font-size: 85px;
+			}
+		}
+	}
+}
+
+/*
+===============================================
+14. Footer Section CSS
+===============================================
+*/
+
+footer {
+	background-color: @lred;
+	color: @white;
+	.abs-logo-footer {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: -100px;
+	}
+	.top-footer {
+		display: block;
+		overflow: hidden;
+		border-bottom: 2px solid @white;
+		padding-bottom: 15px;
+		margin: 15px 15px -15px 15px;
+	}
+	.line-top-white {
+		border-bottom: 2px solid @white;
+		margin: 0 15px;
+	}
+	.content-about-footer {
+		display: block;
+		overflow: hidden;
+		@media(max-width: @screen-sm-min){
+			margin-top: 20px;
+			text-align: center;
+		}
+		h4 {
+			font-family: 'montserratbold';
+			//text-transform: uppercase;
+			font-size: 30px;
+			letter-spacing: 2px;
+			margin-top: 20px;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+	.list-picture-footer {
+		margin-top: 20px;
+		float: left;
+		display: block;
+		li {
+			float: left;
+			width: 60px;
+			height: 60px;
+			background-color: @cream;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			border: solid 2px @white;
+			cursor: pointer;
+			.transition(0.2s);
+			&:hover {
+				opacity: 0.5;
+			}
+			@media(min-width: @screen-md-min){
+				width: 77px;
+				height: 77px;
+			}
+		}
+	}
+	.list-link-home {
+		font-family: 'montserratbold';
+		//text-transform: uppercase;
+		font-size: 18px;
+		letter-spacing: 1px;
+		margin-top: 20px;
+		li a {
+			padding-bottom: 10px;
+			cursor: pointer;
+			color: @white;
+			.transition(0.2s);
+			&:hover {
+				color: pink;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.sosmed-cake {
+	margin-top: 77px;
+	@media(max-width: @screen-sm-min){
+		margin-top: 20px;
+		text-align: center;
+	}
+	li {
+		width: 40px;
+		height: 40px;
+		background-color: @lmagenta;
+		display: inline-block;
+		margin-left: 4px;
+		.round(50px);
+		.transition(0.2s);
+		cursor: pointer;
+		@media(min-width: @screen-sm-min){
+			width: 50px;
+			height: 50px;
+		}
+
+		&:hover {
+			background-color: darken(@lmagenta, 10%);
+			.round(10px);
+		}
+
+		.center-sosmed {
+			display: table;
+			text-align: center;
+			width: 100%;
+			height: 100%;
+			p {
+				text-align: center;
+				display: table-cell;
+				vertical-align: middle;
+				font-size: 20px;
+				padding: 10px;
+				@media(min-width: @screen-sm-min){
+					font-size: 28px;
+				}
+			}
+		}
+	}
+}
+
+.logo-dn {
+	padding:60px 0;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}

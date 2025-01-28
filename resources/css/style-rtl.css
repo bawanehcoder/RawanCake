@@ -1,0 +1,749 @@
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cairo', sans-serif;
+}
+
+.section-title p {
+    font-family: 'Cairo', sans-serif;
+}
+
+.section-title-02__sub-title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.section-title-04__sub-title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.section-title-04__title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.section-title-05__title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.section-title-05 .read-more {
+    font-family: 'Cairo', sans-serif;
+}
+
+.section-title-06__subtitle {
+    font-family: 'Cairo', sans-serif;;
+}
+
+.section-title-07__subtitle {
+    font-family: 'Cairo', sans-serif;
+}
+
+.section-title-09__subtitle {
+    font-family: 'Cairo', sans-serif;
+}
+
+.section-title-09__title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.section-title-09__btn {
+    font-family: 'Cairo', sans-serif;
+}
+
+.section-title-10__subtitle {
+    font-family: 'Cairo', sans-serif;
+}
+
+.section-title-10__title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.more-btn_two {
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.btn-arrow {
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.header-primary-menu li.menu-item-has-children > .menu-item-link::after {
+    margin-right: 10px;
+}
+
+.header-primary-menu .sub-menu li .sub-item-link span::before {
+    border-right: 0 solid;
+}
+
+.header-primary-menu .sub-menu-mega .mega-menu-item-title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.mini-cart-item__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.mobile-primary-menu li.menu-item-has-children .mobile-menu-expand {
+    left: 0;
+
+}
+
+.mobile-primary-menu .sub-menu {
+    background-color: #212121;
+
+}
+
+.mobile-primary-menu .sub-menu li .sub-item-link {
+    color: #b6b6b6;
+
+}
+
+.mobile-primary-menu .sub-menu li .sub-item-link span::before {
+    border-right: 0 solid;
+
+}
+
+.mobile-primary-menu .sub-menu li:hover > .sub-item-link span::before {
+    border-right-width: 4px;
+    padding-right: 13px;
+}
+
+.mobile-menu-two li > .menu-item-link {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.footer-widget__title-02 {
+    font-size: 18px;
+    font-family: 'Cairo', sans-serif;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .slider-content-04 {
+        margin-top: -84px;
+    }
+}
+
+.slider-content-05__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.slider-content-07__btn {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.slider-content-07__text {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-item__badge {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-item__price {
+
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-item.product-item-02 .product-item__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-item.product-item-02 .product-item__price {
+    font-family: 'Cairo', sans-serif;
+}
+
+.product-item.product-item-03 .product-item__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-item.product-item-03 .product-item__price {
+    font-family: 'Cairo', sans-serif;
+}
+
+.product-item.product-item-05 .product-item__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-item.product-item-05 .product-item__price {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-item.product-item-06 .product-item__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-item.product-item-06 .product-item__price {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-item.product-item-07 .product-item__price {
+
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-item.product-item-08 .product-item__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-tab-menu-two .nav li button {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-item-style-01__title {
+
+    font-family: 'Cairo', sans-serif;
+}
+
+.featured-product-item__title {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Product Item  */
+.product-list__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-list-item__badge {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-list-item__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.countdown-wrapper .single-countdown .single-countdown_time {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.callto-action-03__title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.callto-action-03__text {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.boxbanner-subtitle {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.boxbanner-btn {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.sell-banner_subtitle {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.shop-banner_social li a {
+    font-family: 'Cairo', sans-serif;
+}
+
+.instagram-title__sub-title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.newsletter__btn {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.newsletter-two__btn {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.newsletter-three__field {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.features-card-item-02__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.hot-product-content-title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.hot-product-content-item__heading-label {
+    font-family: 'Cairo', sans-serif;
+}
+
+.hot-product-content-item__heading-value {
+    font-family: 'Cairo', sans-serif;
+}
+
+.counter-item__label {
+    font-family: 'Cairo', sans-serif;
+}
+
+.testimonial-item p {
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.customer-review-title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.testimonial-four_author {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.testimonial-five_author {
+    font-family: 'Cairo', sans-serif;
+}
+
+.blog-itemtwo__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.blog-itemfour__meta {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.blog-itemfour__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.blog-post__meta li {
+    font-family: 'Cairo', sans-serif;
+}
+
+.blog-post-two__meta li {
+    font-family: 'Cairo', sans-serif;
+}
+
+.single-blog-title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.pricing-card__sub-title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.pricing-card__price-value {
+    font-family: 'Cairo', sans-serif;
+}
+
+.pricing-card__price-suffix {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.about-content__name {
+    font-family: 'Cairo', sans-serif;
+}
+
+.about-two_subtitle {
+    font-family: 'Cairo', sans-serif;
+}
+
+.about-two_text {
+    font-family: 'Cairo', sans-serif;
+}
+
+.about-two_more {
+    font-family: 'Cairo', sans-serif;
+}
+
+.about-schedule_name {
+    font-family: 'Cairo', sans-serif;
+}
+
+.about-schedule_time {
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.category-box-item__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.category-three_more {
+    font-family: 'Cairo', sans-serif;
+}
+
+.contact-section2__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+
+.contact-section2__text {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.contact-section2_list__text {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.contact-section2_form__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.contact-section3_form__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.contact-section3_form__text {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.contact-section3_content__title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.contact-section3_content__text {
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.best-service-item__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.event_subtitle {
+
+    font-family: 'Cairo', sans-serif;
+}
+
+.event_title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.event_discount {
+    font-family: 'Cairo', sans-serif;
+}
+
+.why-choose-content .accordion-button {
+    font-family: 'Cairo', sans-serif;
+}
+
+.why-choose-title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.team-name {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.team-2-name {
+    font-family: 'Cairo', sans-serif;
+}
+
+.team-3-name {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.story-bg_text-one {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.story-bg_text-two {
+    font-family: 'Cairo', sans-serif;
+}
+
+.breadcrumb_title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.breadcrumb_list li {
+    font-family: 'Cairo', sans-serif;
+}
+
+.cart-totals-inner .title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.cart-product-mobile-title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-summery .product-head-price {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-summery .product-title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-summery .actions .action:last-child {
+    padding-right: 20%;
+}
+
+.product-summery .product-group-content .title {
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.single-product-vertical-tab .swiper-button-next {
+
+    right: -85%;
+
+
+}
+
+.product-desc-title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.review-title-date .title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.comments-area .title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.product-accordion .accordion-button {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.myaccount-content.address .title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.myaccount-content.address .name {
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.faq-top__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.faq-head__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.faq .accordion-button {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.error-content__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+
+.coming-title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.coming-wrapper .single-countdown .single-countdown_time {
+    font-family: 'Cairo', sans-serif;
+
+
+}
+
+.coming-wrapper .single-countdown .single-countdown_text {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.sidebars_widget__title {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.sidebars_widget .extra-controls_filter input {
+    font-family: 'Cairo', sans-serif;
+}
+
+.sidebars_widget__post .single-post_content__meta {
+    font-family: 'Cairo', sans-serif;
+}
+
+.sidebars_widget__post .single-post_content__title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.sidebars_widget__banner .banner-content_title:hover {
+    color: #c8f;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px) {
+    .sidebar-right .sidebars {
+        margin-left: 0px !important;
+    }
+}
+
+.sidebar-left .sidebars {
+    margin-right: -50%;
+    margin-left: 0px;
+    min-width: calc((100vw) / 2 - 100%);
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .sidebar-left .sidebars {
+        padding: 110px 92% 100px 40px;
+        margin-left: 0px !important;
+        margin-right: -83% !important;
+        min-width: calc((100vw) / 2 - 100%);
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .sidebar-left .sidebars {
+        margin-left: 0px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .sidebar-left .sidebars {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .blog-sidebar-left .sidebars {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .blog-sidebar-left .sidebars {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .blog-sidebar-left .sidebars {
+        margin-left: 0px;
+    }
+}
+
+
+/*ul.offcanvas-cart-items {*/
+/*    max-height: 63vh !important;*/
+/*    overflow-y: scroll;*/
+/*}*/
+
+div#cart_content {
+    /* max-height: 100vh !important; */
+}
+
+.accordion-button:after {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 5;
+    display: none;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+}
+
+.me-2 {
+    margin-left: .625rem !important;
+}
+.lang-padding{
+    padding-right: 0!important;
+}
+.input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control, .input-group > .form-control-plaintext {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}

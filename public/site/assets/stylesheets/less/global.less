@@ -1,0 +1,203 @@
+/* 
+=============================================== 
+Table Of Content
+=============================================== 
+
+1. Global CSS HTML
+  1.1 Heading
+  1.2 Default Ul li
+  1.3 Button
+  1.4 Default Image Selection
+  1.5 Button
+  1.6 Normal Heading and Padding
+  1.7 Mixing Form and Image
+  1.8 Line
+
+-------------------------------------------- */
+
+/* 
+=============================================== 
+1. Global CSS HTML
+===============================================
+*/
+
+@import "variable.less";
+
+body {
+  font-family: 'latoregular';
+  background-color: @cream;
+  color: @grey;
+  // position: relative;
+}
+
+/* 
+=============================================== 
+1.1 Heading
+===============================================
+*/
+
+h1 {
+  font-family: 'montserratbold';
+  font-size: 40px;
+  @media(min-width: @screen-sm-min){
+    font-size: 60px;
+  }
+}
+
+h2 {
+  font-family: 'moon_flower_boldregular';
+  font-size: 40px;
+  @media(min-width: @screen-sm-min){
+    font-size: 50px;
+  }
+}
+
+h3 {
+  font-family: 'latoregular';
+}
+
+/* 
+=============================================== 
+1.2 Default Ul li 
+===============================================
+*/
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 
+=============================================== 
+1.3 Default Link Selection 
+===============================================
+*/
+
+a {
+  color: @blue;
+  &:hover {
+    color: darken(@blue, 10%);
+  }
+}
+
+/* 
+=============================================== 
+1.4 Default Image Selection
+===============================================
+*/
+
+// img {
+//  width: 100%;
+// }
+
+/* 
+=============================================== 
+1.5 Button
+===============================================
+*/
+
+.button-d-cake {
+  padding: 10px 30px;
+  font-family: 'montserratbold';
+  font-size: 18px;
+  text-transform: uppercase;
+  .round(10px);
+  border: transparent;
+  &.blue-button-cake {
+    background-color: @blue;
+    .transition(.2s);
+    &:hover {
+      background-color: darken(@blue, 30%);
+      .round(20px);
+    }
+  }
+  &.pink-button-cake {
+    background-color: @lpink;
+    .transition(.2s);
+    &:hover {
+      background-color: darken(@lpink, 30%);
+      .round(20px);
+    }
+  }
+  &.orange-button-cake {
+    background-color: @lorange;
+    .transition(.2s);
+    &:hover {
+      background-color: darken(@lorange, 30%);
+      .round(20px);
+    }
+  }
+}
+
+/* 
+=============================================== 
+1.6 Normal Heading and Padding
+===============================================
+*/
+
+.normal-heading {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.pad-top-0i {
+  padding-top: 0 !important;
+}
+
+.text-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  p {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.pad-md-100 {
+  padding: 0 50px;
+  @media(min-width: @screen-md-min){
+    padding: 0 100px;
+  }
+}
+
+/* 
+=============================================== 
+1.7 Mixing Form and Image
+===============================================
+*/
+
+.form-cake {
+  .round(0px);
+  box-shadow: none;
+}
+
+.img-100 {
+  width: 100%;
+}
+
+.top-relative {
+  position: relative;
+}
+
+.img-100px {
+  width: 100px;
+}
+
+.img-150px {
+  width: 150px;
+}
+
+/* 
+=============================================== 
+1.8 Line
+===============================================
+*/
+
+.top-dashed {
+  border-top: 1px dashed @grey;
+}

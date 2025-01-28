@@ -1,0 +1,169 @@
+@extends('site.layout.master')
+@section('title')
+    @langucw('my account')
+@endsection
+@section('css')
+@endsection
+@section('breadcrumb')
+    <li><a href="{{ route('home') }}">@langucw('home')</a></li>
+    <li>@langucw('my account')</li>
+@endsection
+@section('content')
+  
+
+    <div class="container mt-10">
+        <div class="row mx-0">
+            <div class="col-lg-3">
+                <div class="side-bar p-3">
+                    <div >
+                        <div class="d-flex flex-column mt-3">
+                            <label class="category-items-checkbox">
+                                <span class="sidebar-item-title"><a href="#dashboad" class="active" data-bs-toggle="tab"><i
+                                            class="lastudioicon-home-2"></i>@langucw('dashboard')</a></span>
+                                <input type="radio" name="categories" id="cat_01" />
+                                <div class="checkmark"></div>
+                            </label>
+                            <label class="category-items-checkbox">
+                                <span class="sidebar-item-title"><a href="#orders" data-bs-toggle="tab"><i class="dlicon files_notebook"></i>@langucw('orders') </a></span>
+                                <input type="radio" name="categories" id="cat_02" />
+                                <div class="checkmark"></div>
+                            </label>
+                            <label class="category-items-checkbox">
+                                <span class="sidebar-item-title"><a href="#referral" data-bs-toggle="tab"><i class="dlicon arrows-1_cloud-download-93"></i>@langucw('the referral')</a></span>
+                                <input type="radio" name="categories" id="cat_03" />
+                                <div class="checkmark"></div>
+                            </label>
+                            <label class="category-items-checkbox">
+                                <span class="sidebar-item-title"><a href="#points" data-bs-toggle="tab"><i class="dlicon location_map-big"></i>@langucw('points') </a></span>
+                                <input type="radio" name="categories" id="cat_03" />
+                                <div class="checkmark"></div>
+                            </label>
+                            <label class="category-items-checkbox">
+                                <span class="sidebar-item-title"><a href="#user-occasion" data-bs-toggle="tab"><i class="dlicon location_map-big"></i> @langucw('user-occasion')</a></span>
+                                <input type="radio" name="categories" id="cat_03" />
+                                <div class="checkmark"></div>
+                            </label>
+                            <label class="category-items-checkbox">
+                                <span class="sidebar-item-title"><a href="#account-info" data-bs-toggle="tab"><i class="dlicon users_single-01"></i> Account Details</a></span>
+                                <input type="radio" name="categories" id="cat_03" />
+                                <div class="checkmark"></div>
+                            </label>
+                            <label class="category-items-checkbox">
+                                <span class="sidebar-item-title"><form id="logout-form" method="POST" action="{{ route('logout') }}">@csrf<a onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="dlicon arrows-1_log-out">@langucw('Logout')</a></form></span>
+                                <input type="radio" name="categories" id="cat_03" />
+                                <div class="checkmark"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="col-lg-9 ">
+                <div class="tab-content">
+
+                    <!-- Single Tab Content Start -->
+                    @include('site.myprofile.dashboad')
+                    <!-- Single Tab Content End -->
+
+                    <!-- Single Tab orders Start -->
+                    @include('site.myprofile.orders')
+                    <!-- Single Tab orders End -->
+
+                    <!-- Single Tab referral Start -->
+                    @include('site.myprofile.referral')
+                    <!-- Single Tab referral End -->
+                    <!-- Single Tab referral Start -->
+                    @include('site.myprofile.points')
+                    <!-- Single Tab referral End -->
+                    <!-- Single Tab referral Start -->
+                    @include('site.myprofile.user-occasion')
+                    <!-- Single Tab referral End -->
+
+
+                    <!-- Single Tab address Start -->
+                    {{--                        @include('site.myprofile.address') --}}
+                    <!-- Single Tab address End -->
+
+                    <!-- Single Tab account-info Start -->
+                    <div class="tab-pane fade" id="account-info">
+                        @include('site.myprofile.account-info')
+                    </div>
+
+                    <!-- Single Tab account-info End -->
+
+                </div>
+                {{-- <div class="d-flex flex-row justify-content-between profile gap-2">
+                    <div class="d-flex flex-row w-50 align-items-center p-5  card-counter">
+                        <div class="counter">{{ getLogged()->totalPoints() }}</div>
+                        <h3 class="mx-4">Avaiable Points</h3>
+                    </div>
+                    <div class="d-flex flex-row  w-50 align-items-center p-5  card-counter">
+                        <div class="counter">{{ getLogged()->usersIReferred()->count() }}</div>
+                        <h3 class="mx-4">Referrals Count</h3>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between profile gap-2 mt-2">
+                    <div class="d-flex flex-row w-50 align-items-center p-5  card-counter">
+                        <div class="counter">{{ getLogged()->order->count() }}</div>
+                        <h3 class="mx-4">Order Count</h3>
+                    </div>
+                    <div class="d-flex flex-row  w-50 align-items-center p-5  card-counter">
+                        <div class="counter">{{ getLogged()->userOccasion()->count() }}</div>
+                        <h3 class="mx-4">User Occasion Count</h3>
+                    </div>
+                </div> --}}
+            </div>
+        </div>
+    </div>
+@endsection
+
+<script>
+    function updateProfile() {
+
+        $.ajax({
+            type: 'POST',
+            url: '{{ route('myprofile.update') }}',
+            data: {
+                "name": $('#name').val(),
+                "phone": $('#phone').val(),
+                "email": $('#email').val(),
+                "gender": $('#gender').val(),
+                "zone": $('#zone').val(),
+                "current-pwd": $('#current-pwd').val(),
+                "new-pwd": $('#new-pwd').val(),
+
+            },
+            // dataType: 'json',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            beforeSend: function() {
+
+            },
+            success: function(response) {
+
+                $('#account_info').html(response)
+                if ($('#current-pwd').val() != '') {
+                    document.getElementById('logout-form').submit();
+                }
+            },
+            complete: function(response) {
+
+            },
+            error: function(xhr, status, error) {
+                if (xhr.responseJSON.message != undefined && xhr.responseJSON.message != null) {
+                    toastr.error(xhr.responseJSON.message)
+                } else {
+                    toastr.error("@langucw('an error occurred')")
+                }
+            }
+        });
+    }
+</script>

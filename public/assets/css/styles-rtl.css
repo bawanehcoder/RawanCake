@@ -1,0 +1,204 @@
+.home-header {
+    width: 100%;
+    height: calc(100vh - 50px);
+    position: relative;
+    background-size: cover;
+}
+
+.home-header::before {
+    content: '';
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    top:0
+}
+
+
+
+.header-container {
+    z-index: 1;
+    width: 100%;
+    position: relative;
+}
+
+.header-container .nav-brand, .header-container .nav-brand img {
+    width: 124px;
+    height: 106px;
+}
+
+
+.header-container .nav-link {
+    color: #915ca6 !important;!i;!;
+    font-size: 19px;
+    position: relative;
+    font-weight: 400;
+    padding: 7px 20px !important;!i;!;
+}
+
+.header-container .nav-link:hover {
+    color: #915CA6;
+}
+
+.header-container .nav-link:hover::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #915CA6;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+    right: 40%;
+    left: 40%;
+}
+
+.header-container h1, .header-container h2 {
+    color: white;
+}
+
+.header-container h1 {
+    font-size: 2.6em;
+}
+
+.header-container h2 {
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.header-body {
+    margin-top: 150px;
+}
+
+.header-body .about-section-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 3px 7px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    color: #915CA6;
+    bottom: -125px;
+}
+
+.header-body .about-section-box .icon {
+    border-radius: 50%;
+    background: linear-gradient(180deg, #B476D6 43.5%, #915CA6 62%);
+    width: 100px;
+    height: 100px;
+}
+
+.header-body .about-section-box h3 {
+    color: black;
+}
+
+.header-body .about-section-box p {
+    font-size: 12px;
+}
+
+.joy-section h6 {
+    font-size: 1.8em;
+    color: #A6A6A6;
+}
+
+.slick-next::before, .slick-prev::before {
+    display: none;
+}
+
+.slick-next svg ellipse, .slick-prev svg ellipse {
+    fill: #915CA6;
+}
+
+.slick-next svg path, .slick-prev svg path {
+    fill: white;
+
+}
+
+html[dir="ltr"] .slick-prev {
+    right: auto;
+    left: -5px;
+}
+
+html[dir="ltr"] .slick-next {
+    left: auto;
+    right: -22px;
+}
+
+@media (max-width: 800px) {
+    .header-body {
+        margin-top: 20px;
+    }
+
+    .about-section-box a {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .social-icon-container {
+        justify-content: space-between;
+    }
+
+    .about-section {
+        background-image: none;
+    }
+
+    .about-section .about-img img {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+@keyframes border-pulsate {
+    0% {
+        border-color: rgba(0, 255, 255, 1);
+    }
+
+    50% {
+        border-color: rgba(0, 255, 255, 0);
+    }
+
+    100% {
+        border-color: rgba(0, 255, 255, 1);
+    }
+}
+
+@keyframes background-pulsate {
+    0% {
+        background-color: rgb(242, 242, 242);
+    }
+
+    50% {
+        background-color: rgba(0, 255, 255, 0);
+    }
+
+    100% {
+        background-color: rgb(65, 179, 255);
+    }
+}
+
+a.nav-link.active {
+    background: #915ca6;
+    color: #fff !important;
+    border-radius: 5px;
+    !i;!;
+}
+
+
+section.hom-cats {
+    padding: 100px 0;
+}
+
+section.hom-cats h1 {
+    text-align: center;
+}
+
+section.hom-cats h1:after {
+    display: none;
+}
+a.btn.btn-primary.m-auto.mt-10.vm.aos-init.aos-animate {
+    margin: 50px auto 0 !important;!i;!;
+    display: block;
+    background: transparent;
+    color: #915ca6;
+}

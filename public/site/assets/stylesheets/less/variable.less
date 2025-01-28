@@ -1,0 +1,313 @@
+ 
+// =============================================== 
+// Table Of Content
+// =============================================== 
+
+// 1. Color Scheme
+// 2. Responsive Style
+// 3. Normal Heading
+// 4. Transition Effect
+// 5. Border-Radius
+// 6. Margin and Padding
+// 7. Image Center
+// 8. Color Font
+// 9. Button Default
+// 10. Form Default
+ 
+// =============================================== 
+// 1. Color Scheme
+// =============================================== 
+
+@white		: #FFFFFF;
+@cream		: #F4F3EF;
+@pink		  : #FBA1A1;
+@red		  : #FC7D7D;
+@green		: #23CFA7;
+@purple		: #A593C2;
+@plum     : #875CAD;
+@blue		  : #59d4f0;
+@orange		: #FFBB63;
+@grey		  : #A1A2A6;
+
+@lred     : #F88C91;
+@lpink    : #F8D4D3;
+@lmagenta : #FBA1A1;
+@lgreen   : #A0ECD9;
+@lpurple  : #E6C9FF;
+@lblue    : #B7EFFB;
+@lorange  : #FFCB88;
+
+@dpurple  : #9A70BF;
+@dblue    : #0099bb;
+
+
+ 
+// =============================================== 
+// 2. Responsive Style
+// =============================================== 
+
+
+@screen-sm-min            : 768px;
+@screen-md-min            : 992px;
+
+@screen-xs-max            : 767px;
+@screen-sm-max            : 991px;
+
+ 
+// =============================================== 
+// 3. Normal Heading
+// =============================================== 
+
+
+.normal-heading {
+	margin: 0 auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ 
+// =============================================== 
+// 4. Transition Effect
+// =============================================== 
+
+
+.transition(@val-effect) {
+  -webkit-transition: all @val-effect ease-out;
+  -moz-transition: all @val-effect ease-out;
+  -ms-transition: all @val-effect ease-out;
+  -o-transition: all @val-effect ease-out;
+  transition: all @val-effect ease-out;
+}
+
+ 
+// =============================================== 
+// 5. Border-Radius
+// =============================================== 
+
+
+.round(@val-round) {
+  -webkit-border-radius: @val-round; 
+  -moz-border-radius: @val-round; 
+  border-radius: @val-round; 
+}
+
+.round-top(@val-round) {
+  -webkit-border-top-left-radius: @val-round;
+  -webkit-border-top-right-radius: @val-round; 
+  -moz-border-top-left-radius: @val-round; 
+  -moz-border-top-right-radius: @val-round;
+  border-top-left-radius: @val-round;
+  border-top-right-radius: @val-round;
+}
+
+.round-bottom(@val-round) {
+  -webkit-border-bottom-left-radius: @val-round;
+  -webkit-border-bottom-right-radius: @val-round; 
+  -moz-border-bottom-left-radius: @val-round; 
+  -moz-border-bottom-right-radius: @val-round;
+  border-bottom-left-radius: @val-round;
+  border-bottom-right-radius: @val-round;
+}
+
+ 
+// =============================================== 
+// 6. Margin and Padding
+// =============================================== 
+
+
+.mar-top-10 {
+	margin-top: 10px;
+}
+
+.mar-top-20 {
+  margin-top: 20px;
+}
+
+.mar-right-10 {
+  margin-right: 10px;
+}
+
+.mar-left-10 {
+  margin-left: 10px;
+}
+
+.mar-btm-0 {
+	margin-bottom: 0;
+}
+
+.mar-btm-10 {
+	margin-bottom: 10px;
+}
+
+.mar-btm-20 {
+  margin-bottom: 20px;
+}
+
+.no-pad-right {
+  padding-right: 15px;
+  @media(min-width: @screen-sm-min){
+    padding-right: 0;
+  }
+}
+
+.no-pad-left {
+  padding-left: 15px;
+  @media(min-width: @screen-sm-min){
+    padding-left: 0;
+  }
+}
+
+.pad-top-150 {
+  padding-top: 150px;
+}
+
+.pad-top-10 {
+  padding-top: 10px;
+}
+
+.pad-btm-10 {
+  padding-bottom: 10px;
+}
+
+ 
+// =============================================== 
+// 7. Image Center
+// =============================================== 
+
+
+.img-cake-center {
+  display: block;
+  margin: 0 auto;
+}
+
+.img-cake-center-res {
+  @media(max-width: @screen-sm-min){
+    display: block;
+    margin: 0 auto; 
+  }
+}
+
+.img-full-sm {
+  @media(max-width: @screen-sm-min){
+    width: auto;
+  }
+  @media(min-width: @screen-sm-min){
+    width: 100%;
+  }
+  @media(min-width: @screen-md-min){
+    width: auto;
+  }
+}
+
+ 
+// =============================================== 
+// 8. Color Font
+// =============================================== 
+
+
+.lpurple {
+  color: @lpurple;
+}
+
+.purple-color {
+	color: @purple;
+}
+
+.dpurple-color {
+  color: @dpurple;
+}
+
+.green-color {
+  color: @green;
+}
+
+.orange-color {
+  color: @orange;
+}
+
+.blue-color {
+  color: @blue;
+}
+
+.pink-color {
+  color: @pink;
+}
+
+.grey-color {
+  color: @grey;
+}
+
+ 
+// =============================================== 
+// 9. Button Default
+// =============================================== 
+
+.btn:focus {
+  outline: 0;
+  color: @white;
+}
+
+.btn-inline {
+  display: inline-block;
+}
+
+.btn-pink-cake {
+  background-color: @pink;
+  text-transform: uppercase;
+  color: @white;
+  .transition(0.2s);
+  &:hover {
+    color: @white;
+    background-color: darken(@pink, 10%);
+  }
+}
+
+.btn-grey-cake {
+  background-color: @grey;
+  text-transform: uppercase;
+  color: @white;
+  .transition(0.2s);
+  &:hover {
+    color: @white;
+    background-color: darken(@grey, 10%);
+  }
+}
+
+.btn-blue-cake {
+  background-color: @blue;
+  text-transform: uppercase;
+  color: @white;
+  .transition(0.2s);
+  &:hover {
+    color: @white;
+    background-color: darken(@blue, 10%);
+  }
+}
+
+.btn-orange-cake {
+  background-color: @orange;
+  text-transform: uppercase;
+  color: @white;
+  .transition(0.2s);
+  &:hover {
+    color: @white;
+    background-color: darken(@orange, 10%);
+  }
+}
+
+// =============================================== 
+// 10. Form Default
+// =============================================== 
+
+.form-control-custom {
+  color: @grey;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  &:focus {
+    border: solid 1px @pink;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+    -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  }
+}

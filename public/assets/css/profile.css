@@ -1,0 +1,14 @@
+.profile .card-counter {
+    border-radius: 15px;
+    background: linear-gradient(90deg, #5B1977 0%, #A92EDD 100%);
+    color: white;
+    height: 180px;
+}
+
+.profile .card-counter .counter {
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    color: #5B1977;
+    font-size: 1.5em;
+}
