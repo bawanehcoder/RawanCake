@@ -16,6 +16,7 @@ use \App\Http\Controllers\Site\NewsletterController;
 use \App\Http\Controllers\Site\ProductsController;
 use \App\Http\Controllers\Site\CartController;
 use \App\Http\Controllers\HomeController;
+use App\Http\Controllers\JobApplicationController;
 use \App\Http\Controllers\Site\ShippingInfoController;
 use \App\Http\Controllers\Site\PaymentController;
 use \App\Http\Controllers\Site\OrderController;
@@ -298,3 +299,17 @@ Route::get('tn', function () {
 Route::get('/orders-print/{order}/print', function ($order) {
     return view('orders', compact('order'));
 })->name('orders.prints');
+
+
+
+Route::get('/job-application-form', [JobApplicationController::class, 'showForm'])->name('job-application-form');
+Route::post('/job-application-form', [JobApplicationController::class, 'store']);
+
+
+
+Route::get('/career', [JobApplicationController::class, 'showForm'])->name('job-application-form');
+Route::post('/job-application-form', [JobApplicationController::class, 'store'])->name('job-application.store');
+
+
+
+
