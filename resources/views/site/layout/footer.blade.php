@@ -61,13 +61,17 @@
                     <h3>{{ __('SUPPORT') }}</h3>
                     <ul>
                         <li data-aos="fade-up"><a
-                                href="{{ route('contact_us.show') }}"><span>@langucw('contact Us')</span></a></li>
+                                href="{{ route('contact_us.show') }}"><span>@langucw('Contact Us')</span></a></li>
                         <li data-aos="fade-up" data-aos-delay="300"><a
                                 href="{{ route('our_branches.show') }}">@langucw('our branches')</a></li>
                         <li data-aos="fade-up" data-aos-delay="600"><a
-                                href="{{ route('page.show', ['routeName' => 'about']) }}">@langucw('about Us')</a></li>
-                        <li data-aos="fade-up" data-aos-delay="900"><a target="_blank"
-                                href="https://careers.rawancake.jo/">@langucw('careers')</a></li>
+                                href="{{ route('page.show', ['routeName' => 'about']) }}">@langucw('About Us')</a></li>
+                        {{-- <li data-aos="fade-up" data-aos-delay="900"><a target="_blank"
+                                href="https://careers.rawancake.jo/">@langucw('careers')</a></li> --}}
+                                <li data-aos="fade-up" data-aos-delay="1200">
+                                    <a href="{{ route('job-application-form') }}" target="_blank">@langucw('Careers')</a>
+                                </li>
+                                
 
                     </ul>
                 </div>
@@ -86,7 +90,7 @@
             <div class="container py-2">
                 <div
                     class="mt-3 d-flex flex-md-row flex-column x-0 justify-content-between align-items-center pb-4 copy-right">
-                    <div class="d-flex">© 2025 All Rights Reserved Rawan Cake</div>
+                    <div class="d-flex" style="color: #915CA6;">© 2025 All Rights Reserved Rawan Cake</div>
                     <div class="d-flex">
                         <div class="d-flex mx-2">
                             <svg width="30" height="24" viewBox="0 0 30 24" fill="none"

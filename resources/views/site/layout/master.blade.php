@@ -9,7 +9,6 @@
     @include('site.layout.search')
 </head>
 
-
 <body>
     <form style='display: none;' id='delete-form' action="" method="post">
         @csrf
@@ -21,11 +20,6 @@
 
 
     @yield('content')
-
-
-
-
-
 
     @include('site.layout.footer')
 
@@ -68,13 +62,18 @@
 
     @php
         $carts = \App\Services\CartService::getCarts();
-
     @endphp
 
+    <!-- Update the cart section to show count only when > 0 -->
     @if (count($carts) > 0)
         <a class="fixedshop tow" href="{{ route('cart.view_cart') }}">
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             <span class="cart-count2">{{ count($carts) }}</span>
+        </a>
+    @else
+        <a class="fixedshop tow" href="{{ route('cart.view_cart') }}">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span class="cart-count2" style="display: none;"></span> <!-- Hide the cart count if empty -->
         </a>
     @endif
 
@@ -103,11 +102,9 @@
             a.fixedshop.tow {
                 display: none;
             }
-
         }
 
         @media only screen and (max-width: 767px) {
-
             .desktop-t {
                 display: none
             }

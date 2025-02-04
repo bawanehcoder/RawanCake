@@ -18,6 +18,7 @@ use \App\Http\Controllers\Site\NewsletterController;
 use \App\Http\Controllers\Site\ProductsController;
 use \App\Http\Controllers\Site\CartController;
 use \App\Http\Controllers\HomeController;
+use App\Http\Controllers\JobApplicationController;
 use \App\Http\Controllers\Site\ShippingInfoController;
 use \App\Http\Controllers\Site\PaymentController;
 use \App\Http\Controllers\Site\OrderController;
@@ -316,3 +317,15 @@ Route::get('/cafe/{entity?}', function ( Category $entity = null) {
     $products = $products->whereIn('CatID', $ids)->orderByRaw('CAST(R_ItemShortcut AS UNSIGNED) ASC')->get();
     return view('cafe', compact('products','sub'));
 })->name('cafe');
+
+Route::get('/job-application-form', [JobApplicationController::class, 'showForm'])->name('job-application-form');
+Route::post('/job-application-form', [JobApplicationController::class, 'store']);
+
+
+
+Route::get('/career', [JobApplicationController::class, 'showForm'])->name('job-application-form');
+Route::post('/job-application-form', [JobApplicationController::class, 'store'])->name('job-application.store');
+
+
+
+
