@@ -325,7 +325,3 @@ Route::post('/job-application-form', [JobApplicationController::class, 'store'])
 
 Route::get('/career', [JobApplicationController::class, 'showForm'])->name('job-application-form');
 Route::post('/job-application-form', [JobApplicationController::class, 'store'])->name('job-application.store');
-
-
-
-
