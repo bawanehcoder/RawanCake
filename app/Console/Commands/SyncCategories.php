@@ -238,12 +238,12 @@ class SyncCategories extends Command
                     $product = Item::where('ItemID', $item['R_ItemID'])->first();
 
                     if ($product) {
-                        if ($this->option('flag')) {
+                        // if ($this->option('flag')) {
                             $product->clearMediaCollection('products');
                             MediaService::addMultipleMediaFromRequest($product, $item['R_ItemImageURL2'], 'attached_products');
                             $product->clearMediaCollection('attached_products');
                             MediaService::addMediaFromUrl($product, $item['R_ItemImageURL1'], 'products');
-                        }
+                        // }
                     }
 
                     if ($item['R_ItemID'] == '200014') {

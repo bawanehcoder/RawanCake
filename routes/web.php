@@ -4,6 +4,8 @@
 use App\Exports\InvoicesExport;
 use App\Exports\UsersExport;
 use App\Http\Controllers\ScrollController;
+use App\Models\Category;
+use App\Models\Item;
 use App\Models\Order;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Route;
@@ -298,3 +300,19 @@ Route::get('tn', function () {
 Route::get('/orders-print/{order}/print', function ($order) {
     return view('orders', compact('order'));
 })->name('orders.prints');
+
+
+Route::get('/cafe/{entity?}', function ( Category $entity = null) {
+    $products = Item::query();
+    $ids = null;
+    $sub = null;
+    if($entity){
+        $ids[0] = $entity->id;
+        $sub = $entity;
+    }else{
+        $ids = Category::where('CatID', 6526)->pluck('id')->toArray();
+    }
+
+    $products = $products->whereIn('CatID', $ids)->orderByRaw('CAST(R_ItemShortcut AS UNSIGNED) ASC')->get();
+    return view('cafe', compact('products','sub'));
+})->name('cafe');

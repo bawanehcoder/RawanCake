@@ -22,7 +22,7 @@ class UserTransformer extends Transformer
             'gender' => $user->gender,
             'SocialStatus' => $user->SocialStatus,
             'country_code' => $user->country_code !=null ? $user->country_code :'962',
-            'phone' => $user->phone != null ? $user->phone :'787492261',
+            'phone' => (string)$user->phone,
             'device_token' => $user->device_token,
             'birthDate' =>Carbon::parse($user->BirthDate)->format('Y-m-d'),
 
