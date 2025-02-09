@@ -541,19 +541,19 @@ select option:first-child {
                             <div class="language-box">
                                 <h4>الإنجليزية</h4>
                                 <label for="reading-english">مستوى القراءة:</label>
-                                <select name="reading-english" id="reading-english">
+                                <select name="reading_english" id="reading-english">
                                     <option value="مبتدئ">مبتدئ</option>
                                     <option value="متوسط">متوسط</option>
                                     <option value="متقدم">متقدم</option>
                                 </select>
                                 <label for="writing-english">مستوى الكتابة:</label>
-                                <select name="writing-english" id="writing-english">
+                                <select name="writing_english" id="writing-english">
                                     <option value="مبتدئ">مبتدئ</option>
                                     <option value="متوسط">متوسط</option>
                                     <option value="متقدم">متقدم</option>
                                 </select>
                                 <label for="speaking-english">مستوى المحادثة:</label>
-                                <select name="speaking-english" id="speaking-english">
+                                <select name="speaking_english" id="speaking-english">
                                     <option value="مبتدئ">مبتدئ</option>
                                     <option value="متوسط">متوسط</option>
                                     <option value="متقدم">متقدم</option>
@@ -562,19 +562,19 @@ select option:first-child {
                             <div class="language-box">
                                 <h4>العربية</h4>
                                 <label for="reading-arabic">مستوى القراءة:</label>
-                                <select name="reading-arabic" id="reading-arabic">
+                                <select name="reading_arabic" id="reading-arabic">
                                     <option value="مبتدئ">مبتدئ</option>
                                     <option value="متوسط">متوسط</option>
                                     <option value="متقدم">متقدم</option>
                                 </select>
                                 <label for="writing-arabic">مستوى الكتابة:</label>
-                                <select name="writing-arabic" id="writing-arabic">
+                                <select name="writing_arabic" id="writing-arabic">
                                     <option value="مبتدئ">مبتدئ</option>
                                     <option value="متوسط">متوسط</option>
                                     <option value="متقدم">متقدم</option>
                                 </select>
                                 <label for="speaking-arabic">مستوى المحادثة:</label>
-                                <select name="speaking-arabic" id="speaking-arabic">
+                                <select name="speaking_arabic" id="speaking-arabic">
                                     <option value="مبتدئ">مبتدئ</option>
                                     <option value="متوسط">متوسط</option>
                                     <option value="متقدم">متقدم</option>

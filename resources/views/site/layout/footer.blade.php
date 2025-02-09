@@ -7,9 +7,9 @@
     <footer class="mt-10">
         <div class="container py-4">
             <div class="row mx-0 pb-4">
-                <div class="col-md-3">
+                <div class="col-md-2" style="text-align: center">
                     <img src="{{ asset('assets/images/logo.svg') }}" alt="logo" />
-                    <div class="d-flex gap-2 mt-2">
+                    <div class="d-flex gap-2 mt-2" style="justify-content: center;">
                         <a href="https://web.facebook.com/rawan.cake/?_rdc=1&_rdr" class="social-icon d-flex">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-facebook" viewBox="0 0 16 16">

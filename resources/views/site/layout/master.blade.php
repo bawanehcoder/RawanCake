@@ -114,6 +114,12 @@
             min-height: 164px;
             max-height: 164px;
         }
+        .product .card img {
+    min-height: 164px;
+    max-height: 164px;
+    width: auto !important;
+   max-width: 50% !important;
+}
     </style>
 
 </body>

@@ -20,24 +20,25 @@
                     @endphp
 
                     @foreach ($sub_categorys as $category)
-                    <label style="padding: 6px 26px;" data-aos="fade-right" class="category-items-checkbox">
-                        <a class="sub-item-link " href="{{ route('cafe', $category->id) }}">
-                            <span >{{ $category->getName() }}</span>
-                        </a>
-                        <input type="radio" class="filter-form sidebar-item-title"  @if( $sub && ( $sub->id == $category->id ) ) checked @endif name="categories" id="cat_01" />
-                        <div class="checkmark"></div>
-                    </label>
-                @endforeach
+                        <label style="padding: 6px 26px;" data-aos="fade-right" class="category-items-checkbox">
+                            <a class="sub-item-link " href="{{ route('cafe', $category->id) }}">
+                                <span>{{ $category->getName() }}</span>
+                            </a>
+                            <input type="radio" class="filter-form sidebar-item-title"
+                                @if ($sub && $sub->id == $category->id) checked @endif name="categories" id="cat_01" />
+                            <div class="checkmark"></div>
+                        </label>
+                    @endforeach
                 </div>
             </div>
 
             <div class=" col-lg-9 product">
                 <div class="row mx-0">
                     <h1>
-                        @if($sub)
-                        {{ $sub->getName() }}
+                        @if ($sub)
+                            {{ $sub->getName() }}
                         @else
-                        @langucw('Rawan Cafe')
+                            @langucw('Rawan Cafe')
                         @endif
 
                     </h1>
@@ -83,7 +84,9 @@
                                             {{ $discount }} %
                                         </div>
                                     @endif
-                                    <a href="" class="d-flex align-items-center justify-content-between">
+                                    <a href="" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal{{ $product->id }}"
+                                        class="d-flex align-items-center justify-content-between">
 
                                         <div class="d-none product-fun p-3">
                                             <div class="d-flex align-items-center justify-content-between gap-2">
@@ -110,7 +113,9 @@
                                     </a>
 
                                     <div class="mt-3 d-flex align-items-center justify-content-between ">
-                                        <a href="" class="d-flex align-items-center justify-content-between">
+                                        <a href="" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal{{ $product->id }}"
+                                            class="d-flex align-items-center justify-content-between">
                                             <h3 class="m-0">
                                                 <h3 class="mt-3">{{ $product->getTitle() }}</h3>
                                             </h3>
@@ -138,6 +143,89 @@
 
 
 
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal modal-lg  fade" id="exampleModal{{ $product->id }}" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <div class="modal-body">
+                                            <div class="row mx-0">
+
+                                                @php
+                                                    // dd($product->getFirstMediaUrl('products','large'));
+                                                @endphp
+                                                <div class="col-lg-4 offset-lg-0 col-md-10 offset-md-1">
+                                                    <img class="w-100"
+                                                        src="{{ asset($product->getFirstMediaUrl('products', 'full')) ?? '' }}?v={{ now() }}"
+                                                        title="{{ $product->getTitle() }}"
+                                                        alt="{{ $product->getTitle() }}">
+                                                </div>
+
+                                                {{-- @include('site.products.product-details') --}}
+                                                <div class="col-lg-8">
+                                                    <!-- Product Summery Start -->
+                                                    <div class="product-summery position-relative">
+
+                                                        <div class="row mx-0">
+                                                            <h3 class="col-lg-8 p-0" style="    margin: 20px 0;">
+                                                                {{ $product->getTitle() }}</h3>
+                                                            <div class="col-lg-4 p-0 ">
+                                                                <div class="total-price text-right">{{ __('Total Price') }}
+                                                                </div>
+                                                                <span class="d-price"
+                                                                    data-price="{{ $product->price() }}"></span>
+                                                                <h5 class=" text-right"><span class="d-price-v">
+                                                                        {{ $product->price() }}</span> JOD</h5>
+                                                            </div>
+                                                        </div>
+
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between w-100">
+                                                            <div class="d-flex flex-row">
+                                                                <div class="riv"
+                                                                    style="width: {{ $product->getPercentage() }}%">
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <!-- Description Start -->
+                                                        {{-- <p class="desc-content">{{ $product->getTitle() }}</p> --}}
+                                                        {{-- <p class="desc-content"></p> --}}
+                                                        <div class="row mt-3">
+                                                            <p>{{ $product->getDescription() }}</p>
+                                                        </div>
+                                                        <!-- Description End -->
+
+
+
+
+
+
+
+
+
+
+                                                    </div>
+                                                    <!-- Product Summery End -->
+
+                                                </div>
+
+                                                {{-- @include('site.products.product-details') --}}
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         @endif
                     @endforeach
@@ -176,8 +264,30 @@
         .card div a.d-flex.align-items-center.justify-content-between:nth-child(1) {
             min-height: 85px !important;
         }
-        a.fixedshop.tow{
+
+        a.fixedshop.tow {
             display: none !important
+        }
+
+        .product .card img {
+            min-height: auto !important;
+            max-height: max-content !important;
+        }
+
+        .modal-backdrop.show {
+            width: 100vh;
+            height: 137vh;
+        }
+
+        a.sub-item-link {
+            display: block;
+            padding: 10px 0;
+        }
+
+        .checkmark {
+            top: 18px !important;
+            !i;
+            !;
         }
     </style>
 @endsection

@@ -47,14 +47,14 @@
 
             @if ($product->Special > 0)
                 {{-- <div class="product-item__badge">{{ trans('general.discount') }} </div> --}}
-                <div class="position-absolute Special-label">
+                <div class="position-absolute Special-label" style="    left: 0;">
                     {{ __('Before 1 day') }}
                 </div>
             @endif
 
             @if ($product->new)
                 {{-- <div class="product-item__badge">{{ trans('general.discount') }} </div> --}}
-                <div class="position-absolute Special-label">
+                <div class="position-absolute Special-label" style="right: 0;">
                     {{ __('New') }}
                 </div>
             @endif
@@ -118,7 +118,7 @@
     
     
                 <div class="d-flex flex-column">
-                    <h3 style="    width: 95px;">{{ $product->price() }} {{ $genralSetting->getCurrency() }} </h3>
+                    <h3 style="    width: 95px;padding-top: 20px;">{{ $product->price() }} {{ $genralSetting->getCurrency() }} </h3>
                 </div>
     
             </div>

@@ -13,7 +13,7 @@
         <input type="hidden" id="main_category" class="main_category" name="main_category" value="{{$main_category->id??null}}">
         <form action="{{route('products.index',[$main_category->id??'',$sub_category])}}" >
             <input type="hidden" id="page" name="page" value="{{$page??0}}">
-            <input name="search" value="{{$search??''}}" id="search_filter" class="search-popup__field border-0 border-bottom bg-transparent text-white w-100 tra py-3" type="text" placeholder="Search…">
+            <input name="search" style="text-align: left;direction: ltr;" value="{{$search??''}}" id="search_filter" class="search-popup__field border-0 border-bottom bg-transparent text-white w-100 tra py-3" type="text" placeholder="Search…">
             <button apply-filter main_category="{{$main_category->id??null}}" sub_category="{{$sub_category}}" class="search-popup__icon text-white border-0 bg-transparent position-absolute top-50 start-0 translate-middle-y"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
 

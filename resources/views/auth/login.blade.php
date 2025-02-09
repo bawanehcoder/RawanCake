@@ -97,7 +97,7 @@
         <div class="row mx-0">
             <div class="card px-0 col-md-6 m-auto">
                 <div class="card-header text-center" style="border-bottom: 0;">
-                    <h3>{{ __('login') }}</h3>
+                    <h3>{{ __('Login') }}</h3>
                 </div>
                 <div class="card-body  align-items-center m-auto">
                     <form method="POST" action="{{ route('login') }}">
@@ -113,7 +113,7 @@
                                 name="password" required autocomplete="current-password">
                         </div>
                         <div class="form-group mb-3">
-                            <label class="form-check-label"><input type="checkbox">{{__('Remember Me')}}</label>
+                            <label class="form-check-label"><input type="checkbox" class="me-2">{{__('Remember Me')}}</label>
                         </div>
                         <button type="submit" class="btn btn-primary">{{ __('Login') }}</button>
                         <a href="{{ route('register') }}" class="btn btn-transparent-outlinet">{{__('register')}}</a>

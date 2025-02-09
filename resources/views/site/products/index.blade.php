@@ -34,7 +34,7 @@
                             @elseif ($main_category)
                                 {{ $main_category->getName() }}
                             @else
-                                @langucw('Product')
+                                @langucw('products')
                             @endif
                         @else
                             {{-- @include('components.page-show', ['show' => true]) --}}
