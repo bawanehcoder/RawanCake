@@ -6,7 +6,7 @@
             <a href="{{route('social_login.redirect_to_provider')}}?guard={{$guard}}&provider=twitter" class='twitter login-with-provider-button'>
                 <i class='fa fa-twitter' class='icon' style='color:white; font-size: 20px;'></i>
                 <span class='button-text'>
-                @lang('Login With Twitter')
+                @lang('Login with Twitter')
             </span>
             </a>
         </div>
@@ -18,7 +18,7 @@
             <a href="{{route('social_login.redirect_to_provider')}}?guard={{$guard}}&provider=google" class='google login-with-provider-button'>
                 <i class='fa fa-google ' class='icon' style='font-size: 20px;'></i>
                 <span class='button-text'>
-                @lang('Login With Google')
+                @lang('Login with Google')
             </span>
             </a>
         </div>
@@ -30,7 +30,7 @@
             <a href="{{route('social_login.redirect_to_provider')}}?guard={{$guard}}&provider=facebook" class='fb login-with-provider-button'>
                 <i class='fa fa-facebook' class='icon' style='font-size: 20px;'></i>
                 <span class='button-text' style='width:85%;'>
-                    @lang('Login With Facebook')
+                    @lang('Login with Facebook')
                 </span>
             </a>
         </div>

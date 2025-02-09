@@ -46,7 +46,7 @@
                                     <div class="form-group">
                                         <label>@langucw('your email') *</label>
                                         <input class="form-field" type="email" name="email" value="{{ old('email') }}" 
-                                               placeholder="@langucw('your email')" style="text-align: right; direction: rtl;">
+                                               placeholder="@langucw('your email')" style="text-align: {{ \Config::get('app.locale') == 'en' ? 'left' : 'right' }}; direction: {{ \Config::get('app.locale') == 'en' ? 'ltr' : 'rtl' }};">
                                     </div>
                                 </div>
 
