@@ -394,6 +394,8 @@ header#home-header {
                                     class="btn btn-transparent-outline mx-2 action flag" style="
                                     line-height: 41px;
                                     color: #915ca6;
+                                        border: 1px solid #915ca6;
+    padding: 4px 14px;
                                 ">
                                     عربي
 
@@ -404,6 +406,8 @@ header#home-header {
                                     class="btn btn-transparent-outline mx-2 action flag" style="
                                     line-height: 41px;
                                     color: #915ca6;
+                                        border: 1px solid #915ca6;
+    padding: 4px 14px;
                                 ">
                                     English
 

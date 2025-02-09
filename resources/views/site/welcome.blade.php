@@ -212,8 +212,8 @@
                 <img src="{{ asset('rawancake.Hamada.png') }}" class="img-center" />
             </div>
             <div class="col-lg-8">
-                <h3 class="section-name" data-aos="fade-up">{{ __('BRING JOY') }}</h3>
-                <h6 data-aos="fade-down">{{ __('To your Children with our colourful sweets') }}</h6>
+                <h3 class="section-name" data-aos="fade-up">{{ __('Bring Joy') }}</h3>
+                <h6 data-aos="fade-down">{{ __('Our colorful sweets bring joy to your little ones!') }}</h6>
                 {{-- <a href="{{ route('login') }}" class="btn btn-primary mt-10"
                     data-aos="zoom-in-left">{{ __('Become Member') }}</a> --}}
                 <div class="row mt-4">

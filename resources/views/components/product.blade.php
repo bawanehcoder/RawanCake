@@ -107,10 +107,10 @@
                     id="image_1" />
             </a>
 
-            <div class="mt-3 d-flex align-items-center justify-content-between ">
-                <a href="{{ route('products.show', $product) }}" class="d-flex align-items-center justify-content-between">
+            <div class="mt-3 d-flex align-items-center justify-content-between " style="align-items: start !important">
+                <a href="{{ route('products.show', $product) }}" class="d-flex align-items-center justify-content-between" style="align-items: start !important">
                     <h3 class="m-0">
-                        <h3 class="mt-3">{{ $product->getTitle() }}</h3>
+                        <h3 class="mt-0">{{ $product->getTitle() }}</h3>
                     </h3>
                 </a>
                 @php $offer=$product?->offerActive->last(); @endphp
@@ -118,7 +118,7 @@
     
     
                 <div class="d-flex flex-column">
-                    <h3 style="    width: 95px;padding-top: 20px;">{{ $product->price() }} {{ $genralSetting->getCurrency() }} </h3>
+                    <h3 style="    width: 95px;padding-top: 0;">{{ $product->price() }} {{ $genralSetting->getCurrency() }} </h3>
                 </div>
     
             </div>
