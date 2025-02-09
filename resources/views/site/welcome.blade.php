@@ -182,7 +182,14 @@
                         @endif
                         @endforeach
 
-                        <button type="button" id="show_more" class="btn btn-primary">{{ __('Show More') }}</button>
+                        <button type="button" id="show_more" class="btn btn-primary">
+                            <span class="showm">
+                                {{ __('Show More') }}
+                                </span>
+                                <span class="showm" style="display: none">
+                                    {{ __('Show Less') }}
+                                    </span>
+                        </button>
                         <!-- Column Tittle -->
                         {{-- <div class="col-sm-12">
                             <p class="text-content text-center">

@@ -469,6 +469,8 @@
     });
 
     $("#show_more").click(function(){
+        
+        $(".showm").toggle();
         $(".hoder").toggle();
     });
 

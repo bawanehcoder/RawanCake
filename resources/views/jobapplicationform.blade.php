@@ -535,9 +535,9 @@ select option:first-child {
                 <div class="form-group">
                     <label for="languages">اللغات:</label>
                     <div id="language-levels" class="language-levels-container">
-                        <!-- مربع اللغة الإنجليزية -->
+                       
                         <div id="language-levels" class="language-levels-container">
-                            <!-- مربع اللغة الإنجليزية -->
+                          
                             <div class="language-box">
                                 <h4>الإنجليزية</h4>
                                 <label for="reading-english">مستوى القراءة:</label>

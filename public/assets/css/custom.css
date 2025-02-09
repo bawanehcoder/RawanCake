@@ -4294,7 +4294,7 @@ textarea.form-control {
     }
 
 nav#header-container {
-    background: transparent !important;!i;!;
+    background: transparent !important;
 }
 
 div#navbarSupportedContent {
@@ -5087,7 +5087,7 @@ nav#header-container {
 }
 
 .header-container .nav-link {
-    color: #915CA6 !important;!i;!;
+    color: #915CA6 !important;
 }
 
 }
@@ -6080,6 +6080,8 @@ nav#header-container {
 
 .product-item__image {
     width: 80%;
+
+    
     margin: 0 auto;
     position: relative
 }
@@ -6087,6 +6089,7 @@ nav#header-container {
 .product-item__image>a {
     display: block
 }
+
 
 .product-item__image img {
     width: 100%;
@@ -18567,7 +18570,7 @@ span.cart-count {
     width: 25px;
     height: 25px;
     top: -12px;
-    font-size: 12px !important;!i;!;
+    font-size: 12px !important;
     right: 0px;
     line-height: 27px;
     border-radius: 90px;
@@ -18587,7 +18590,7 @@ button.position-relative {
     width: 100%;
 }
 nav#header-container {
-    z-index: 999999 !important;!i;!;
+    z-index: 999999 !important;
 }
 header.home-header.parallax .btn-transparent-outline i {
     color: #fff;
