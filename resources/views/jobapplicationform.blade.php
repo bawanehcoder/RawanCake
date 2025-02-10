@@ -16,46 +16,33 @@
             --gradient-end: #F8D7E5;
         }
         body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: 'Amiri', serif;
-    padding: 2rem 1rem;
-    color: var(--text-dark);
-    background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Download%20premium%20image%20of%20Hand%20drawn%20cakes%20frame%20design%20element%20by%20katie%20about%20background,%20frame,%20art,%20vintage,%20and%20illustration%202416218.jpg-kU5itiERByfVFClIo1ZyGwEM2NfTty.jpeg');
-    background-repeat: repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Amiri', serif;
+            padding: 2rem 1rem;
+            color: var(--text-dark);
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Download%20premium%20image%20of%20Hand%20drawn%20cakes%20frame%20design%20element%20by%20katie%20about%20background,%20frame,%20art,%20vintage,%20and%20illustration%202416218.jpg-kU5itiERByfVFClIo1ZyGwEM2NfTty.jpeg');
+            background-repeat: repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
 
-/* Adjust container background to be slightly more opaque to ensure form readability */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: linear-gradient(135deg, rgba(255, 246, 230, 0.95), rgba(255, 230, 243, 0.95), rgba(240, 230, 255, 0.95));
-    border-radius: 50px;
-    padding: 2.5rem;
-    box-shadow: 0 15px 30px rgba(155, 107, 157, 0.2);
-    position: relative;
-    overflow: hidden;
-}
-
-select option:first-child {
-    color: #666;
-    font-style: italic;
-}
-
-
-        /* .container {
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            background: linear-gradient(135deg, #FFF6E6, #FFE6F3, #F0E6FF);
+            background: linear-gradient(135deg, rgba(255, 246, 230, 0.95), rgba(255, 230, 243, 0.95), rgba(240, 230, 255, 0.95));
             border-radius: 50px;
             padding: 2.5rem;
             box-shadow: 0 15px 30px rgba(155, 107, 157, 0.2);
             position: relative;
             overflow: hidden;
-        } */
+        }
+
+        select option:first-child {
+            color: #666;
+            font-style: italic;
+        }
 
         .header {
             text-align: center;
@@ -203,20 +190,20 @@ select option:first-child {
         }
 
         input, select, textarea {
-    width: 100%;
-    padding: 0.5rem 0.8rem; 
-    border: 2px solid transparent;
-    border-radius: 8px;
-    font-family: 'Amiri', serif;
-    font-size: 1.5rem; 
-    color: var(--text-dark);
-    background: linear-gradient(var(--white), var(--white)) padding-box,
-                linear-gradient(45deg, var(--primary-purple), var(--secondary-purple)) border-box;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
-    height: auto; 
-    line-height: 1.5; 
-}
+            width: 100%;
+            padding: 0.5rem 0.8rem; 
+            border: 2px solid transparent;
+            border-radius: 8px;
+            font-family: 'Amiri', serif;
+            font-size: 1.5rem; 
+            color: var(--text-dark);
+            background: linear-gradient(var(--white), var(--white)) padding-box,
+                        linear-gradient(45deg, var(--primary-purple), var(--secondary-purple)) border-box;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            height: auto; 
+            line-height: 1.5; 
+        }
 
         input:focus, select:focus, textarea:focus {
             outline: none;
@@ -381,6 +368,90 @@ select option:first-child {
         .agreement-text {
             flex: 1;
         }
+
+        .language-levels-container {
+            display: flex;
+            gap: 20px; 
+            margin-top: 10px;
+        }
+        .language-levels-container > div {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            flex: 1; 
+        }
+        .language-levels-container h4 {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+        }
+        .language-levels-container label {
+            display: block;
+            margin: 5px 0;
+        }
+        .language-levels-container select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .language-levels-container .language-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* New styles for the success message popup */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background: linear-gradient(135deg, rgba(255, 246, 230, 0.95), rgba(255, 230, 243, 0.95), rgba(240, 230, 255, 0.95));
+            border-radius: 15px;
+            padding: 2rem;
+            width: 80%;
+            max-width: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(155, 107, 157, 0.2);
+        }
+
+        .popup h2 {
+            color: var(--primary-purple);
+            margin-bottom: 1rem;
+        }
+
+        .popup p {
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .popup button {
+            background: linear-gradient(45deg, var(--secondary-purple), var(--primary-purple));
+            color: var(--white);
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 25px;
+            font-family: 'Amiri', serif;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .popup button:hover {
+            background: linear-gradient(45deg, var(--primary-purple), var(--secondary-purple));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(155, 107, 157, 0.3);
+        }
     </style>
 </head>
 <body>
@@ -401,410 +472,352 @@ select option:first-child {
             <div class="step">4</div>
         </div>
 
-        {{-- <form id="jobForm" method="post" action="" enctype="multipart/form-data" >
-            @csrf --}}
-            <fieldset class="active">
-                <legend>البيانات الشخصية</legend>
+        <fieldset class="active">
+            <legend>البيانات الشخصية</legend>
 
+            <div class="form-group">
+                <label for="photo">الصورة الشخصية:</label>
+                <div class="photo-container">
+                    <img id="photoPreview" src="/placeholder.svg" alt="الصورة الشخصية">
+                </div>
+                <input type="file" name="photo" id="photo" required accept="image/*">
+            </div>
+
+            <div class="form-row">
                 <div class="form-group">
-                    <label for="photo">الصورة الشخصية:</label>
-                    <div class="photo-container">
-                        <img id="photoPreview" src="" alt="الصورة الشخصية">
-                    </div>
-                    <input type="file" name="photo" id="photo" required accept="image/*">
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="full_name">الاسم الرباعي:</label>
-                        <input type="text" name="full_name" id="full_name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="nationality">الجنسية:</label>
-                        <input type="text" name="nationality" id="nationality" required>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="birthplace">مكان الولادة:</label>
-                        <input type="text" name="birthplace" id="birthplace">
-                    </div>
-                    <div class="form-group">
-                        <label for="dob">تاريخ الولادة:</label>
-                        <input type="date" name="dob" id="dob" required>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="national_id">الرقم الوطني:</label>
-                        <input type="text" name="national_id" id="national_id">
-                    </div>
-                    <div class="form-group">
-                        <label for="gender">الجنس:</label>
-                        <select name="gender" id="gender" required>
-                            <option value="">اختر...</option>
-                            <option value="male">ذكر</option>
-                            <option value="female">أنثى</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="smoker">هل أنت مدخن؟</label>
-                        <select name="smoker" id="smoker" required>
-                            <option value="">اختر...</option>
-                            <option value="yes">نعم</option>
-                            <option value="no">لا</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="currently_employed">هل أنت على رأس عملك؟</label>
-                        <select name="currently_employed" id="currently_employed" required>
-                            <option value="">اختر...</option>
-                            <option value="yes">نعم</option>
-                            <option value="no">لا</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="buttons">
-                    <button type="button" id="next1">التالي</button>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>بيانات الاتصال</legend>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="phone">رقم الهاتف:</label>
-                        <input type="text" name="phone" id="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">عنوان البريد الإلكتروني:</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
+                    <label for="full_name">الاسم الرباعي:</label>
+                    <input type="text" name="full_name" id="full_name" required>
                 </div>
                 <div class="form-group">
-                    <label for="address">عنوان السكن الدائم:</label>
-                    <input type="text" name="address" id="address">
+                    <label for="nationality">الجنسية:</label>
+                    <input type="text" name="nationality" id="nationality" required>
                 </div>
+            </div>
 
-                <div class="buttons">
-                    <button type="button" id="prev2">السابق</button>
-                    <button type="button" id="next2">التالي</button>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="birthplace">مكان الولادة:</label>
+                    <input type="text" name="birthplace" id="birthplace">
                 </div>
-            </fieldset>
+                <div class="form-group">
+                    <label for="dob">تاريخ الولادة:</label>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+            </div>
 
-            <fieldset>
-                <legend>المؤهلات العلمية</legend>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="qualification">المؤهل العلمي:</label>
-                        <select name="qualification" id="qualification" required>
-                            <option value="" disabled selected>اختر المؤهل العلمي</option>
-                            <option value="ثانوية عامة ناجح">الثانوية العامة ناجح</option>
-                            <option value="ثانوية عامة راسب">الثانوية العامة راسب</option>
-                            <option value="جامعة">جامعة</option>
-                            <option value="ماجستير">ماجستير</option>
-                            <option value="دكتوراه">دكتوراه</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="major">التخصص الدراسي:</label>
-                        <input type="text" name="major" id="major" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="grade">التقدير:</label>
-                        <input type="text" name="grade" id="grade">
-                    </div>
-                    <div class="form-group">
-                        <label for="university">الجامعة:</label>
-                        <input type="text" name="university" id="university">
-                    </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="national_id">الرقم الوطني:</label>
+                    <input type="text" name="national_id" id="national_id">
                 </div>
                 <div class="form-group">
-                    <label for="graduation_year">سنة التخرج:</label>
-                    <input type="text" name="graduation_year" id="graduation_year">
+                    <label for="gender">الجنس:</label>
+                    <select name="gender" id="gender" required>
+                        <option value="">اختر...</option>
+                        <option value="male">ذكر</option>
+                        <option value="female">أنثى</option>
+                    </select>
                 </div>
-            
+            </div>
+
+            <div class="form-row">
                 <div class="form-group">
-                    <label for="languages">اللغات:</label>
-                    <div id="language-levels" class="language-levels-container">
-                       
-                        <div id="language-levels" class="language-levels-container">
-                          
-                            <div class="language-box">
-                                <h4>الإنجليزية</h4>
-                                <label for="reading-english">مستوى القراءة:</label>
-                                <select name="reading_english" id="reading-english">
-                                    <option value="مبتدئ">مبتدئ</option>
-                                    <option value="متوسط">متوسط</option>
-                                    <option value="متقدم">متقدم</option>
-                                </select>
-                                <label for="writing-english">مستوى الكتابة:</label>
-                                <select name="writing_english" id="writing-english">
-                                    <option value="مبتدئ">مبتدئ</option>
-                                    <option value="متوسط">متوسط</option>
-                                    <option value="متقدم">متقدم</option>
-                                </select>
-                                <label for="speaking-english">مستوى المحادثة:</label>
-                                <select name="speaking_english" id="speaking-english">
-                                    <option value="مبتدئ">مبتدئ</option>
-                                    <option value="متوسط">متوسط</option>
-                                    <option value="متقدم">متقدم</option>
-                                </select>
-                            </div>
-                            <div class="language-box">
-                                <h4>العربية</h4>
-                                <label for="reading-arabic">مستوى القراءة:</label>
-                                <select name="reading_arabic" id="reading-arabic">
-                                    <option value="مبتدئ">مبتدئ</option>
-                                    <option value="متوسط">متوسط</option>
-                                    <option value="متقدم">متقدم</option>
-                                </select>
-                                <label for="writing-arabic">مستوى الكتابة:</label>
-                                <select name="writing_arabic" id="writing-arabic">
-                                    <option value="مبتدئ">مبتدئ</option>
-                                    <option value="متوسط">متوسط</option>
-                                    <option value="متقدم">متقدم</option>
-                                </select>
-                                <label for="speaking-arabic">مستوى المحادثة:</label>
-                                <select name="speaking_arabic" id="speaking-arabic">
-                                    <option value="مبتدئ">مبتدئ</option>
-                                    <option value="متوسط">متوسط</option>
-                                    <option value="متقدم">متقدم</option>
-                                </select>
-                            </div>
-                        </div>
-                       
-                    </div>
+                    <label for="smoker">هل أنت مدخن؟</label>
+                    <select name="smoker" id="smoker" required>
+                        <option value="">اختر...</option>
+                        <option value="yes">نعم</option>
+                        <option value="no">لا</option>
+                    </select>
                 </div>
-            
                 <div class="form-group">
-                    <label for="experience">الخبرات:</label>
-                    <textarea name="experience" id="experience" rows="4" placeholder="اذكري الوظائف السابقة، أماكن العمل، والفترات الزمنية"></textarea>
+                    <label for="currently_employed">هل أنت على رأس عملك؟</label>
+                    <select name="currently_employed" id="currently_employed" required>
+                        <option value="">اختر...</option>
+                        <option value="yes">نعم</option>
+                        <option value="no">لا</option>
+                    </select>
                 </div>
-            
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="next1">التالي</button>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>بيانات الاتصال</legend>
+            <div class="form-row">
                 <div class="form-group">
-                    <label for="courses">الدورات:</label>
-                    <textarea name="courses" id="courses" rows="3" placeholder="اسم الدورة، مدتها، ومكان الحصول عليها"></textarea>
+                    <label for="phone">رقم الهاتف:</label>
+                    <input type="text" name="phone" id="phone" required>
                 </div>
-            
-                <div class="buttons">
-                    <button type="button" id="prev3">السابق</button>
-                    <button type="button" id="next3">التالي</button>
+                <div class="form-group">
+                    <label for="email">عنوان البريد الإلكتروني:</label>
+                    <input type="email" name="email" id="email" required>
                 </div>
-            </fieldset>
-            
-            <style>
-                .language-levels-container {
-        display: flex;
-        gap: 20px; 
-        margin-top: 10px;
-    }
-    .language-levels-container > div {
-        border: 1px solid #ccc;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-        flex: 1; 
-    }
-    .language-levels-container h4 {
-        margin: 0 0 10px 0;
-        font-size: 16px;
-    }
-    .language-levels-container label {
-        display: block;
-        margin: 5px 0;
-    }
-    .language-levels-container select {
-        width: 100%;
-        padding: 5px;
-        margin-bottom: 10px;
-    }
-    .language-levels-container .language-box {
-        display: flex;
-        flex-direction: column;
-    }
-            </style>
-            
-            {{-- <script>
-                function addLanguageFields(select) {
-                    const language = select.value;
-                    const container = document.getElementById('language-levels');
-                    
-                    if (language) {
-                        const div = document.createElement('div');
-                        div.innerHTML = `
-                            <h4>${language}</h4>
-                            <label for="reading-${language}">مستوى القراءة:</label>
-                            <select name="reading-${language}" id="reading-${language}">
-                                <option value="مبتدئ">مبتدئ</option>
-                                <option value="متوسط">متوسط</option>
-                                <option value="متقدم">متقدم</option>
-                            </select>
-                            <label for="writing-${language}">مستوى الكتابة:</label>
-                            <select name="writing-${language}" id="writing-${language}">
-                                <option value="مبتدئ">مبتدئ</option>
-                                <option value="متوسط">متوسط</option>
-                                <option value="متقدم">متقدم</option>
-                            </select>
-                            <label for="speaking-${language}">مستوى المحادثة:</label>
-                            <select name="speaking-${language}" id="speaking-${language}">
-                                <option value="مبتدئ">مبتدئ</option>
-                                <option value="متوسط">متوسط</option>
-                                <option value="متقدم">متقدم</option>
-                            </select>
-                        `;
-                        container.appendChild(div);
-                    }
-                } --}}
+            </div>
+            <div class="form-group">
+                <label for="address">عنوان السكن الدائم:</label>
+                <input type="text" name="address" id="address">
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="prev2">السابق</button>
+                <button type="button" id="next2">التالي</button>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>المؤهلات العلمية</legend>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="qualification">المؤهل العلمي:</label>
+                    <select name="qualification" id="qualification" required>
+                        <option value="" disabled selected>اختر المؤهل العلمي</option>
+                        <option value="ثانوية عامة ناجح">الثانوية العامة ناجح</option>
+                        <option value="ثانوية عامة راسب">الثانوية العامة راسب</option>
+                        <option value="جامعة">جامعة</option>
+                        <option value="ماجستير">ماجستير</option>
+                        <option value="دكتوراه">دكتوراه</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="major">التخصص الدراسي:</label>
+                    <input type="text" name="major" id="major" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="grade">التقدير:</label>
+                    <input type="text" name="grade" id="grade">
+                </div>
+                <div class="form-group">
+                    <label for="university">الجامعة:</label>
+                    <input type="text" name="university" id="university">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="graduation_year">سنة التخرج:</label>
+                <input type="text" name="graduation_year" id="graduation_year">
+            </div>
         
-
-            <fieldset>
-                <legend>نص الاتفاقية والمرفقات</legend>
-                <div class="form-group agreement-group">
-                    <input type="checkbox" id="agree" name="agree" required>
-                    <label for="agree" class="agreement-label">
-                        <span class="checkmark"></span>
-                        <span class="agreement-text">أتعهد أنا مقدم الطلب بأن جميع البيانات المقدمة صحيحة وأنا مسؤول عنها.</span>
-                    </label>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="job_position">الوظيفة المطلوبة:</label>
-                        <input type="text" name="job_position" id="job_position" required>
+            <div class="form-group">
+                <label for="languages">اللغات:</label>
+                <div id="language-levels" class="language-levels-container">
+                    <div class="language-box">
+                        <h4>الإنجليزية</h4>
+                        <label for="reading-english">مستوى القراءة:</label>
+                        <select name="reading_english" id="reading-english">
+                            <option value="مبتدئ">مبتدئ</option>
+                            <option value="متوسط">متوسط</option>
+                            <option value="متقدم">متقدم</option>
+                        </select>
+                        <label for="writing-english">مستوى الكتابة:</label>
+                        <select name="writing_english" id="writing-english">
+                            <option value="مبتدئ">مبتدئ</option>
+                            <option value="متوسط">متوسط</option>
+                            <option value="متقدم">متقدم</option>
+                        </select>
+                        <label for="speaking-english">مستوى المحادثة:</label>
+                        <select name="speaking_english" id="speaking-english">
+                            <option value="مبتدئ">مبتدئ</option>
+                            <option value="متوسط">متوسط</option>
+                            <option value="متقدم">متقدم</option>
+                        </select>
                     </div>
-                    <div class="form-group">
-                        <label for="branch">الفرع المطلوب للعمل:</label>
-                        <input type="text" name="branch" id="branch" required>
+                    <div class="language-box">
+                        <h4>العربية</h4>
+                        <label for="reading-arabic">مستوى القراءة:</label>
+                        <select name="reading_arabic" id="reading-arabic">
+                            <option value="مبتدئ">مبتدئ</option>
+                            <option value="متوسط">متوسط</option>
+                            <option value="متقدم">متقدم</option>
+                        </select>
+                        <label for="writing-arabic">مستوى الكتابة:</label>
+                        <select name="writing_arabic" id="writing-arabic">
+                            <option value="مبتدئ">مبتدئ</option>
+                            <option value="متوسط">متوسط</option>
+                            <option value="متقدم">متقدم</option>
+                        </select>
+                        <label for="speaking-arabic">مستوى المحادثة:</label>
+                        <select name="speaking_arabic" id="speaking-arabic">
+                            <option value="مبتدئ">مبتدئ</option>
+                            <option value="متوسط">متوسط</option>
+                            <option value="متقدم">متقدم</option>
+                        </select>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="min_salary">الحد الأدنى للراتب المطلوب:</label>
-                    <input type="text" name="min_salary" id="min_salary" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="resume">قم بتحميل ملف السيرة الذاتية:</label>
-                    <input type="file" name="resume" id="resume" required>
-                </div>
-
-                <div class="buttons">
-                    <button type="button" id="prev4">السابق</button>
-                    <button type="submit">تقديم الطلب</button>
-                </div>
-            </fieldset>
+            </div>
         
+            <div class="form-group">
+                <label for="experience">الخبرات:</label>
+                <textarea name="experience" id="experience" rows="4" placeholder="اذكري الوظائف السابقة، أماكن العمل، والفترات الزمنية"></textarea>
+            </div>
+        
+            <div class="form-group">
+                <label for="courses">الدورات:</label>
+                <textarea name="courses" id="courses" rows="3" placeholder="اسم الدورة، مدتها، ومكان الحصول عليها"></textarea>
+            </div>
+        
+            <div class="buttons">
+                <button type="button" id="prev3">السابق</button>
+                <button type="button" id="next3">التالي</button>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>نص الاتفاقية والمرفقات</legend>
+            <div class="form-group agreement-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree" class="agreement-label">
+                    <span class="checkmark"></span>
+                    <span class="agreement-text">أتعهد أنا مقدم الطلب بأن جميع البيانات المقدمة صحيحة وأنا مسؤول عنها.</span>
+                </label>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="job_position">الوظيفة المطلوبة:</label>
+                    <input type="text" name="job_position" id="job_position" required>
+                </div>
+                <div class="form-group">
+                    <label for="branch">الفرع المطلوب للعمل:</label>
+                    <input type="text" name="branch" id="branch" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="min_salary">الحد الأدنى للراتب المطلوب:</label>
+                <input type="text" name="min_salary" id="min_salary" required>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">قم بتحميل ملف السيرة الذاتية:</label>
+                <input type="file" name="resume" id="resume" required>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="prev4">السابق</button>
+                <button type="submit">تقديم الطلب</button>
+            </div>
+        </fieldset>
     </div>
 </form>
+
+<div id="successPopup" class="popup">
+    <div class="popup-content">
+        <h2>تم إرسال الطلب بنجاح</h2>
+        <p>شكراً لتقديمك. سنقوم بمراجعة طلبك والرد عليك في أقرب وقت ممكن.</p>
+        <button onclick="closePopup()">إغلاق</button>
+    </div>
+</div>
+
+<script>
+    const steps = document.querySelectorAll('fieldset');
+    const stepIndicators = document.querySelectorAll('.step');
+    let currentStep = 0;
+
+    document.getElementById('photo').addEventListener('change', function (event) {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            document.getElementById('photoPreview').src = e.target.result;
+        }
+
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    });
+
+    document.getElementById('next1').addEventListener('click', () => {
+        steps[currentStep].classList.remove('active');
+        stepIndicators[currentStep].classList.remove('active');
+        currentStep++;
+        steps[currentStep].classList.add('active');
+        stepIndicators[currentStep].classList.add('active');
+    });
+
+    document.getElementById('next2').addEventListener('click', () => {
+        steps[currentStep].classList.remove('active');
+        stepIndicators[currentStep].classList.remove('active');
+        currentStep++;
+        steps[currentStep].classList.add('active');
+        stepIndicators[currentStep].classList.add('active');
+    });
+
+    document.getElementById('next3').addEventListener('click', () => {
+        steps[currentStep].classList.remove('active');
+        stepIndicators[currentStep].classList.remove('active');
+        currentStep++;
+        steps[currentStep].classList.add('active');
+        stepIndicators[currentStep].classList.add('active');
+    });
+
+    document.getElementById('prev2').addEventListener('click', () => {
+        steps[currentStep].classList.remove('active');
+        stepIndicators[currentStep].classList.remove('active');
+        currentStep--;
+        steps[currentStep].classList.add('active');
+        stepIndicators[currentStep].classList.add('active');
+    });
+
+    document.getElementById('prev3').addEventListener('click', () => {
+        steps[currentStep].classList.remove('active');
+        stepIndicators[currentStep].classList.remove('active');
+        currentStep--;
+        steps[currentStep].classList.add('active');
+        stepIndicators[currentStep].classList.add('active');
+    });
+
+    document.getElementById('prev4').addEventListener('click', () => {
+        steps[currentStep].classList.remove('active');
+        stepIndicators[currentStep].classList.remove('active');
+        currentStep--;
+        steps[currentStep].classList.add('active');
+        stepIndicators[currentStep].classList.add('active');
+    });
     
-
-
-    <script>
-        const steps = document.querySelectorAll('fieldset');
-        const stepIndicators = document.querySelectorAll('.step');
-        let currentStep = 0;
-
-        document.getElementById('photo').addEventListener('change', function (event) {
-            const file = event.target.files[0];
-            const reader = new FileReader();
-
-            reader.onload = function (e) {
-                document.getElementById('photoPreview').src = e.target.result;
-            }
-
-            if (file) {
-                reader.readAsDataURL(file);
-            }
-        });
-
-        document.getElementById('next1').addEventListener('click', () => {
-            steps[currentStep].classList.remove('active');
-            stepIndicators[currentStep].classList.remove('active');
-            currentStep++;
-            steps[currentStep].classList.add('active');
-            stepIndicators[currentStep].classList.add('active');
-        });
-
-        document.getElementById('next2').addEventListener('click', () => {
-            steps[currentStep].classList.remove('active');
-            stepIndicators[currentStep].classList.remove('active');
-            currentStep++;
-            steps[currentStep].classList.add('active');
-            stepIndicators[currentStep].classList.add('active');
-        });
-
-        document.getElementById('next3').addEventListener('click', () => {
-            steps[currentStep].classList.remove('active');
-            stepIndicators[currentStep].classList.remove('active');
-            currentStep++;
-            steps[currentStep].classList.add('active');
-            stepIndicators[currentStep].classList.add('active');
-        });
-
-        document.getElementById('prev2').addEventListener('click', () => {
-            steps[currentStep].classList.remove('active');
-            stepIndicators[currentStep].classList.remove('active');
-            currentStep--;
-            steps[currentStep].classList.add('active');
-            stepIndicators[currentStep].classList.add('active');
-        });
-
-        document.getElementById('prev3').addEventListener('click', () => {
-            steps[currentStep].classList.remove('active');
-            stepIndicators[currentStep].classList.remove('active');
-            currentStep--;
-            steps[currentStep].classList.add('active');
-            stepIndicators[currentStep].classList.add('active');
-        });
-
-        document.getElementById('prev4').addEventListener('click', () => {
-            steps[currentStep].classList.remove('active');
-            stepIndicators[currentStep].classList.remove('active');
-            currentStep--;
-            steps[currentStep].classList.add('active');
-            stepIndicators[currentStep].classList.add('active');
-        });
-        
     function addLanguageFields(select) {
         const language = select.value;
         const container = document.getElementById('language-levels');
         
         container.innerHTML = '';
 
-        // if (language) {
-            const div = document.createElement('div');
-            div.innerHTML = `
-                <h4>${language}</h4>
-                <label for="reading-${language}">مستوى القراءة:</label>
-                <select name="reading-${language}" id="reading-${language}">
-                    <option value="مبتدئ">مبتدئ</option>
-                    <option value="متوسط">متوسط</option>
-                    <option value="متقدم">متقدم</option>
-                </select>
-                <label for="writing-${language}">مستوى الكتابة:</label>
-                <select name="writing-${language}" id="writing-${language}">
-                    <option value="مبتدئ">مبتدئ</option>
-                    <option value="متوسط">متوسط</option>
-                    <option value="متقدم">متقدم</option>
-                </select>
-                <label for="speaking-${language}">مستوى المحادثة:</label>
-                <select name="speaking-${language}" id="speaking-${language}">
-                    <option value="مبتدئ">مبتدئ</option>
-                    <option value="متوسط">متوسط</option>
-                    <option value="متقدم">متقدم</option>
-                </select>
-            `;
-            container.appendChild(div);
-        }
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <h4>${language}</h4>
+            <label for="reading-${language}">مستوى القراءة:</label>
+            <select name="reading-${language}" id="reading-${language}">
+                <option value="مبتدئ">مبتدئ</option>
+                <option value="متوسط">متوسط</option>
+                <option value="متقدم">متقدم</option>
+            </select>
+            <label for="writing-${language}">مستوى الكتابة:</label>
+            <select name="writing-${language}" id="writing-${language}">
+                <option value="مبتدئ">مبتدئ</option>
+                <option value="متوسط">متوسط</option>
+                <option value="متقدم">متقدم</option>
+            </select>
+            <label for="speaking-${language}">مستوى المحادثة:</label>
+            <select name="speaking-${language}" id="speaking-${language}">
+                <option value="مبتدئ">مبتدئ</option>
+                <option value="متوسط">متوسط</option>
+                <option value="متقدم">متقدم</option>
+            </select>
+        `;
+        container.appendChild(div);
+    }
     
-    </script>
+    document.getElementById('jobForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Here you would typically send the form data to the server
+        // For this example, we'll just show the success message
+        document.getElementById('successPopup').style.display = 'block';
+    });
+
+    function closePopup() {
+        document.getElementById('successPopup').style.display = 'none';
+    }
+</script>
 </body>
 </html>
-
